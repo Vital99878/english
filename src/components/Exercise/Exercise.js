@@ -8,6 +8,13 @@ import classes from './Exercise.module.scss';
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) => {
   const [exerciseNUmber, task, taskBody, rule, ruleBody] = exercise.split('\n');
 
+
+  useEffect(() => {
+      if (localStorage.getItem('exercise')) {
+          goToExercise( Number(localStorage.getItem('exercise')))
+      }
+  },[])
+
   function changeInputWidth(evt) {
     evt.target.style.width = `${evt.target.value.length * 16}px`;
   }
@@ -19,11 +26,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
             <input onChange={changeInputWidth} className={classes.input} type="text" defaultValue="…" />
         </>
     ));
-  // delete last input
-    
-
-
-
 
 
   return (
@@ -41,13 +43,13 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
           Next
         </button>
           <input type="number" placeholder='go to exercise' onChange={(evt) => {
+              window.scrollTo(0, 0)
               const number = evt.target.value
               if (number >= 1 && number < 568) {
                   goToExercise (evt.target.value);
               }
           }}/>
       </div>
-
     </div>
   );
 };

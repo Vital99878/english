@@ -1,9 +1,11 @@
-import exercises from './exercises'
+import exercises from '../data/exercises'
+import keys from '../data/keys'
 
 
-const initialState = {exercises, number: 1}
+const initialState = {exercises, keys, number: 1}
 
 const exercisesReducer = (state = initialState, action) => {
+
   switch (action.type) {
     case 'PREVIOUS':
 
