@@ -1,26 +1,30 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as actions from '../../redux/actions'
 
 import classes from './Exercise.module.scss';
 
-const Exercise = ({ exercise, nextExercise, previousExercise }) => {
+const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) => {
   const [exerciseNUmber, task, taskBody, rule, ruleBody] = exercise.split('\n');
-  
-
 
   function changeInputWidth(evt) {
     evt.target.style.width = `${evt.target.value.length * 16}px`;
   }
 
+    const dataForBody = taskBody.split('…')
+    const bodyInputs =dataForBody.map((item) => (
+        <>
+            <span>{item}</span>
+            <input onChange={changeInputWidth} className={classes.input} type="text" defaultValue="…" />
+        </>
+    ));
+  // delete last input
+    
 
-  const bodyInputs = taskBody.split('…').map((item) => (
-    <>
-      <span>{item}</span>
-      <input onChange={changeInputWidth} className={classes.input} type="text" defaultValue="…" />
-    </>
-  ));
+
+
+
 
   return (
     <div className={classes.exercise}>
@@ -36,7 +40,14 @@ const Exercise = ({ exercise, nextExercise, previousExercise }) => {
         <button type="button" onClick={() => nextExercise(Number(exerciseNUmber))}>
           Next
         </button>
+          <input type="number" placeholder='go to exercise' onChange={(evt) => {
+              const number = evt.target.value
+              if (number >= 1 && number < 568) {
+                  goToExercise (evt.target.value);
+              }
+          }}/>
       </div>
+
     </div>
   );
 };
@@ -48,6 +59,7 @@ Exercise.propTypes = {
   exercise: PropTypes.string.isRequired,
   nextExercise: PropTypes.func.isRequired,
   previousExercise: PropTypes.func.isRequired,
+    goToExercise: PropTypes.func.isRequired,
 };
 
 
