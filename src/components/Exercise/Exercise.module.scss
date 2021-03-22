@@ -2,9 +2,50 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  padding: 8px 24px;
+  padding: 16px 36px;
   border:  2px solid silver;
-  margin: 36px auto;
+  width: 100%;
+
+  span,p {
+    font-size: 26px;
+    line-height: 44px;
+  }
 }
 
+.input {
+  border: none;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: transparent;
+  width: 16px;
+}
+
+.input:focus {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0 8px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 26px;
+  background-color: transparent;
+  transition: width .2s;
+}
+
+.next {
+  margin-top: 32px;
+  padding: 0 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-top: 16px;
+  font-size: 26px;
+  color: #006300;
+}
+button {
+  cursor: pointer;
+}
