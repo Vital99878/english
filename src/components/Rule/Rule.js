@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import classes from './Rule.module.scss';
 
 function Rule({ rule }) {
@@ -8,8 +9,9 @@ function Rule({ rule }) {
 
   return (
     <div className={classes.rule}>
-      <p className={classes.title}>{rule_title}</p>
-      <ul className={classes.list}>{rules}</ul>
+      {/*<p className={classes.title}>{rule_title}</p>*/}
+      <ReactMarkdown source={rule} escapeHtml={false} />
+      {/*<ul className={classes.list}>{rules}</ul>*/}
     </div>
   );
 }
