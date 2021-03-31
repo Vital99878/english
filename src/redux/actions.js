@@ -1,15 +1,11 @@
 /* eslint-disable no-shadow,consistent-return */
-import exercises from '../data/exercises';
-
-const PREVIOUS = 'PREVIOUS';
-const NEXT = 'NEXT';
-const GO_TO_EXERCISE = 'GO_TO_EXERCISE';
+import { PREV_EXERCISE, NEXT_EXERCISE, GO_TO_EXERCISE } from './actionsTypes';
 
 export const previousExercise = (number) => {
   number = number !== 1 ? number - 1 : 1;
   localStorage.setItem('exercise', number);
   return {
-    type: PREVIOUS,
+    type: PREV_EXERCISE,
     number,
   };
 };
@@ -18,7 +14,7 @@ export const nextExercise = (number) => {
   number = number !== 567 ? number + 1 : 567;
   localStorage.setItem('exercise', number);
   return {
-    type: NEXT,
+    type: NEXT_EXERCISE,
     number,
   };
 };
