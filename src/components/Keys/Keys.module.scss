@@ -1,5 +1,5 @@
 @import "src/mixins";
-.exercise {
+.keys {
   @include border;
   box-sizing: border-box;
   display: flex;
@@ -7,14 +7,19 @@
   padding: 16px 36px;
   border:  2px solid silver;
   width: 100%;
-  background-color: #d9f0d9;
 
+  background-color: #d9f0d9;
+  grid-column: 2 /3 ;
+
+  @media (max-width: 768px) {
+    grid-column: 1/2 ;
+  }
   @media (max-width: 420px) {
     padding: 16px 12px;
   }
 
-  span,p {
 
+  span,p {
     font-size: 22px;
     line-height: 32px;
   }
@@ -42,11 +47,10 @@
 }
 
 .next {
-  border-top: 1px solid grey;
-  margin-top: 28px;
-  padding: 24px 0;
+  margin-top: 32px;
+  padding: 0 180px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
   input {
     width: 120px;
@@ -60,25 +64,6 @@
     flex-direction: column;
     height: 100px;
   }
-}
-
-.rule {
-  border-top: 1px solid grey;
-  font-weight: bolder;
-  color: #535353;
-  padding-top: 6px;
-  margin-top: 12px;
-  font-size: 20px;
-  text-indent: 20px;
-}
-
-.ruleBody {
-  font-weight: bolder;
-  color: #535353;
-  padding-top: 6px;
-  margin-top: 12px;
-  font-size: 20px;
-  text-indent: 20px;
 }
 
 
