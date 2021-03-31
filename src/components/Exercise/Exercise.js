@@ -14,7 +14,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
     }
   }, []);
 
-  function changeInputWidth(evt) {
+  function calcInputWidth(evt) {
     evt.target.style.width = `${evt.target.value.length * 16}px`;
   }
 
@@ -22,7 +22,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
   const bodyInputs = dataForBody.map((item) => (
     <>
       <span>{item}</span>
-      <input onChange={changeInputWidth} className={classes.input} type="text" defaultValue="…" />
+      <input onChange={calcInputWidth} className={classes.input} type="text" defaultValue="…" />
     </>
   ));
 
@@ -32,7 +32,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
       <span>{todo}</span>
       <p>{bodyInputs}</p>
       {(rule && rule.includes(':') && <Rule rule={rule} />) || (rule && <p className={classes.rule}>{rule}</p>)}
-      <p>{ruleBody}</p>
+      <p className={classes.ruleBody}>{ruleBody}</p>
       <div className={classes.next}>
         <button type="button" onClick={() => previousExercise(Number(exerciseNumber))}>
           Previous
@@ -47,7 +47,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
             window.scrollTo(0, 0);
             const number = evt.target.value;
             if (number >= 1 && number < 568) {
-              goToExercise(evt.target.value);
+              goToExercise(number);
             }
           }}
         />
