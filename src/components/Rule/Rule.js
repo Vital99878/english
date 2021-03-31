@@ -10,7 +10,6 @@ function Rule({ rule }) {
   return (
     <div className={classes.rule}>
       <p className={classes.title}>{rule_title}</p>
-      {/*<ul className={classes.list}>{rules}</ul>*/}
       <Markdown>{rulesContent}</Markdown>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as actions from '../../redux/actions';
@@ -6,7 +6,7 @@ import Rule from '../Rule';
 import classes from './Exercise.module.scss';
 
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) => {
-  const [exerciseNUmber, task, taskBody, rule, ruleBody] = exercise.split('\n');
+  const { exerciseNumber, todo, exerciseBody, rule, ruleBody } = exercise;
 
   useEffect(() => {
     if (localStorage.getItem('exercise')) {
@@ -18,7 +18,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
     evt.target.style.width = `${evt.target.value.length * 16}px`;
   }
 
-  const dataForBody = taskBody.split('…');
+  const dataForBody = exerciseBody.split('…');
   const bodyInputs = dataForBody.map((item) => (
     <>
       <span>{item}</span>
@@ -28,16 +28,16 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
 
   return (
     <div className={classes.exercise}>
-      <h2>{`Упражнение  №${exerciseNUmber}`}</h2>
-      <span>{task}</span>
+      <h2>{`Упражнение  №${exerciseNumber}`}</h2>
+      <span>{todo}</span>
       <p>{bodyInputs}</p>
       {(rule && rule.includes(':') && <Rule rule={rule} />) || (rule && <p className={classes.rule}>{rule}</p>)}
       <p>{ruleBody}</p>
       <div className={classes.next}>
-        <button type="button" onClick={() => previousExercise(Number(exerciseNUmber))}>
+        <button type="button" onClick={() => previousExercise(Number(exerciseNumber))}>
           Previous
         </button>
-        <button type="button" onClick={() => nextExercise(Number(exerciseNUmber))}>
+        <button type="button" onClick={() => nextExercise(Number(exerciseNumber))}>
           Next
         </button>
         <input
