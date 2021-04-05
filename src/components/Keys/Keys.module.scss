@@ -1,0 +1,77 @@
+@import "src/mixins";
+.keys {
+  @include border;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 36px;
+  border:  2px solid silver;
+  width: 100%;
+
+  background-color: #d9f0d9;
+  grid-column: 2 /3 ;
+
+  @media (max-width: 768px) {
+    grid-column: 1/2 ;
+  }
+  @media (max-width: 420px) {
+    padding: 16px 12px;
+  }
+
+
+  span,p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.input {
+  border: none;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  background-color: transparent;
+  width: 12px;
+}
+
+.input:focus {
+  border: none;
+  border-bottom: 1px solid black;
+
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  background-color: transparent;
+  transition: width .2s;
+}
+
+.next {
+  margin-top: 32px;
+  padding: 0 180px;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 120px;
+    text-align: center;
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 0 60px;
+    flex-direction: column;
+    height: 100px;
+  }
+}
+
+
+h4 {
+  margin-top: 16px;
+  font-size: 26px;
+  color: #006300;
+}
+button {
+  cursor: pointer;
+}

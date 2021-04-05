@@ -1,18 +1,67 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import * as actions from '../../redux/actions';
+import Rule from '../Rule';
+import { createIndex } from '../../utilites';
 import classes from './Exercise.module.scss';
 
-const Exercise = ({ exercise }) => {
-  const [exerciseNUmber, task, taskBody, rule, ruleBody] = exercise.split('\n');
+const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) => {
+  const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
+
+  useEffect(() => {
+    if (localStorage.getItem('exercise')) {
+      goToExercise(Number(localStorage.getItem('exercise')));
+    }
+  }, []);
+  console.log(rule, ruleBody);
+
+  const inputName = createIndex();
+  const dataForBody = exerciseData.split('…');
+  const exerciseBody = dataForBody.map((item) => (
+    <>
+      <span>{item}</span>
+      <input
+        onChange={(evt) => {
+          evt.target.style.width = `${evt.target.value.length * 16}px`;
+        }}
+        className={classes.input}
+        type="text"
+        name={inputName.next().value}
+        defaultValue="…"
+      />
+    </>
+  ));
 
   return (
-    <div className={classes.exercise}>
-      <h2>{`Упражнение  №${exerciseNUmber}`}</h2>
-      <span>{task}</span>
-      <p>{taskBody}</p>
-      <h4>{rule}</h4>
-      <p>{ruleBody}</p>
-    </div>
+    <article className={classes.mainWrapper}>
+      <div className={classes.exercise}>
+        <h2 className={classes.exerciseTitle}>{`Упражнение  №${exerciseNumber}`}</h2>
+        <span className={classes.exerciseTodo}>{todo}</span>
+        <p className={classes.exerciseBody}>{exerciseBody}</p>
+      </div>
+      <Rule rule={rule} ruleBody={ruleBody} />
+      <form className={classes.nextPrevWrapper}>
+        <button type="button" className={classes.nextPrev} onClick={() => previousExercise(Number(exerciseNumber))}>
+          Prev
+        </button>
+        <button type="button" className={classes.nextPrev} onClick={() => nextExercise(Number(exerciseNumber))}>
+          Next
+        </button>
+        <input
+          type="number"
+          placeholder="go to "
+          className={classes.goTo}
+          onChange={(evt) => {
+            window.scrollTo(0, 0);
+            const number = evt.target.value;
+            if (number >= 1 && number < 568) {
+              goToExercise(number);
+            }
+          }}
+        />
+      </form>
+    </article>
   );
 };
 
@@ -21,5 +70,9 @@ Exercise.defaultProp = {
 };
 Exercise.propTypes = {
   exercise: PropTypes.string.isRequired,
+  nextExercise: PropTypes.func.isRequired,
+  previousExercise: PropTypes.func.isRequired,
+  goToExercise: PropTypes.func.isRequired,
 };
-export default Exercise;
+
+export default connect(null, actions)(Exercise);

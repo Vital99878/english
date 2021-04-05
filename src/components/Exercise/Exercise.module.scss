@@ -1,10 +1,98 @@
-.exercise {
+@import 'src/mixins';
+
+.mainWrapper {
+  @include border;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  padding: 8px 24px;
-  border:  2px solid silver;
-  margin: 36px auto;
+  padding: 36px;
+  border: 2px solid rgba(181, 181, 181, 0.45);
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+  width: 100%;
+  background-color: #d9f0d9;
+
+  > * {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 420px) {
+    padding: 16px 12px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 60px;
+    flex-direction: column;
+    height: 100px;
+  }
 }
 
+.exercise {
+  .exerciseTitle {
+  }
+  .exerciseTodo,
+  .exerciseBody {
+    font-size: 22px;
+    line-height: 32px;
+
+    .input {
+      border: none;
+      text-align: center;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 22px;
+      background-color: transparent;
+      width: 12px;
+      cursor: unset;
+    }
+
+    .input:focus {
+      border: none;
+      border-bottom: 1px solid black;
+      text-align: center;
+      font-style: italic;
+      font-weight: 400;
+      background-color: transparent;
+      transition: width 0.2s;
+    }
+  }
+}
+
+.ruleBody {
+  font-weight: bolder;
+  color: #535353;
+  font-size: 20px;
+  text-indent: 20px;
+  .rule {
+    font-weight: bolder;
+    color: #535353;
+    padding-top: 6px;
+    margin-top: 12px;
+    font-size: 20px;
+    text-indent: 20px;
+  }
+}
+
+.nextPrevWrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+  .nextPrev {
+    @include button;
+  }
+
+  .nextPrev:hover {
+    transition: background-color 0.4s ease-in;
+    background-color: #397de3;
+    color: white;
+  }
+
+  .goTo {
+    width: 120px;
+    text-align: center;
+    @include button;
+    font-size: 12px;
+    background-color: transparent;
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
+  }
+}

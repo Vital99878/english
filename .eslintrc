@@ -30,6 +30,7 @@
     "react-hooks/exhaustive-deps": "off",
     // my rules added
     "react/jsx-filename-extension": "off",
+    "import/prefer-default-export": "off",
     "camelcase": "off", //
     "react/jsx-pascal-case": "off",
     "no-nested-ternary": "off",
