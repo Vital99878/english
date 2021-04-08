@@ -6,6 +6,7 @@ import classes from './Rule.module.scss';
 function Rule({ rule, ruleBody }) {
   if (!rule) rule = '';
   if (!ruleBody) ruleBody = '';
+  if (!rule && !ruleBody) return null;
 
   return (
     <div className={classes.rule}>

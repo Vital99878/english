@@ -103,8 +103,9 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. There is … wonderful small computer in … front of … books there. 2. Where is … soup? — … soup is in … big saucepan on … gas cooker. 3. Where are … cutlets? — … cutlets are in … refrigerator on … little plate. 4. There is no … bread on … table. Where is … bread? 5. There is … little brown coffee table in our … room in … front of … sofa. 6. Where is … table in your … room? 7. There is … thick carpet on … floor in my mother’s … room. 8. Is your brother at … home? — No, he is at … work. He works in … big factory. He is … engineer. 9. My sister has many … books. … books are in … big bookcase. She has really … good … taste in … books. 10. … weather is fine today. Let’s go and play in … yard. There are many … children in … yard. They are playing with … ball.  ',
-    rule:
-      ' Запомните следующие конструкции, требующие неопределенного артикля: I have a …, This is a …, I am a …, Не has a …, That is a …, Не is a …, I see a …, It is a …, She is a …, There is a … ',
+    rule: ' Запомните следующие конструкции, требующие неопределенного артикля:',
+    ruleBody:
+      ' I have a …, This is a …, I am a …, Не has a …, That is a …, Не is a …, I see a …, It is a …, She is a …, There is a … ',
     keys:
       " 1. There is а wonderful small computer in front of the  books  there.  2. Where is  the  soup?  - The soup is in а big saucepan on the gas cooker. 3. Where are  the  cutlets?  - The cutlets  are  in  the  refrigerator  on а little plate. 4. There is no bread on the tаblе. Where  is the bread? 5. There is а little brown coffee tаblе in our room in front of the sofa. 6. Where is the tаblе in your room? 7. There is а thick carpet on the floor in  my mother's room. 8. 1s your brother at home? - No, he is at work. Не works in а big factory. Не is an engineer. 9. Му sister has many books. The books are in а big bookcase. She has really good taste in books.10. The weather is fine today. Let's go and play in the yard. There are many children in the yard. They are playing with а ball.",
   },
@@ -113,7 +114,8 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. I see … bottle of … pineapple … juice on … kitchen table. 2. Her … son has … great … sense of … humor. 3. There was … disco at … club last Sunday but he did n’t go. 4. Is there … bus stop near … building? 5. We have … big dog. … dog is very clever. 6. My friend has … very good computer. 7. This … boy is big. He is … student. 8. There is … large piano in … hall. 9. This is … tree and that is not … tree. It’s … bush. 10. I am … boy. I am … pupil. I study  at … school. 11. My sister is at … work. She is … secretary. She works for … new company. 12. This is … very difficult question. I don’t know … answer to it. 13. Do you see … little girl with … big ball in her … hands? She is … pupil of our … school. 14. There was … beautiful flower in this … vase yesterday. Where is … flower now? 15. Last year we were in Geneva. It is … exciting city to visit, but … very expensive place to live.  ',
-    rule: ' Запомните следующие устойчивые словосочетания: in the middle, in the corner, to the right, to the left ',
+    rule: ' Запомните следующие устойчивые словосочетания:',
+    ruleBody: 'in the middle, in the corner, to the right, to the left',
     keys:
       " 1. 1 see а bottle of pineapple juice on the kitchen tаblе.2. Her son has а great sense of humor. 3. There was а disco at the club last Sunday but he didn't go. 4. 1s there а bus stop near the building? 5. We have а big dog. The dog is very clever. 6. Му friend has а very good computer.7. This bоу is big. Не is а student. 8. There is а large piano in the hall. 9. This is а tree and that is not а tree. It's а bush. 10. 1am а bоу. 1 am а pupil. 1study at school.11. Му sister is at work. She is а secretary. She works for а new company. 12. This is а very difficult question. 1 don't know the answer to it. 13. Do you see а little girl with а big ball in her hands? She is а pupil of our school.14. There was а beautiful flower in this vase yesterday. Where is the flower now? 15. Last year we were in Geneva. lt is an exciting city to visit, but а very expensive place to live.",
   },
@@ -158,8 +160,9 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. Every day my … brother and I get up at eight o’clock and walk to … school. I like … school. It’s … fun. My … brother loves … football. He hates … homework. So he does n’t like to go to … school. Will he go to … work in … future? 2. My … friend has to get up early in … morning because he goes to … school. That’s why he usually goes to … bed early in … evening. 3. … weather was very bad in … morning yesterday. … sky was grey and it was raining. But in … middle of … day … weather began to change. … rain stopped and … sun appeared from behind … clouds. In … afternoon it was very warm. I did not want to stay at … home and went into … yard. There were … boys and … girls in … yard. We played in … yard till late in … evening. When I came … home,  I drank … tea, ate … sandwich and went to … bed at once. I slept very well at … night.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: at ✓ half past five, at a quarter past five, to go ✓ home, to come ✓ home, to leave ✓ home for ✓ work (for ✓ school) ',
+    rule: ' Запомните следующие устойчивые словосочетания:',
+    ruleBody:
+      ' at ✓ half past five, at a quarter past five, to go ✓ home, to come ✓ home, to leave ✓ home for ✓ work (for ✓ school)',
     keys:
       " 1. Every day my brother and I get up at eight o'clock and walk to school. 1 like school. It's fun. Му brother loves football. Не hates homework. So he doesn't like to go to school. Will he go to work in the future? 2. Му friend has to get up early in the morning because he goes to school. That's why he usually goes to bed early in the evening. 3. The weather was very bad in the morning yesterday. The sky was grey and it was raining. But in the middle of the day the weather began to change. The rain stopped and the sun appeared from behind the clouds. In the afternoon it was very warm. 1 did not want to stay at home and went into the yard. There were boys and girls in the yard. We played in the yard till late in the evening. When I came home, 1 drank tea, ate а sandwich and went to bed at once. 1 slept very well at night.",
   },
@@ -169,7 +172,12 @@ const exercise = [
     exerciseBody:
       ' 1. My brother is … pupil. He goes to … school. He goes to … school in … morning. He has five or six … lessons every day. In … afternoon he goes … home. At … home he does his … homework. In … evening he reads … books. He usually goes to … bed at … half past ten. At … night he sleeps. 2. My father goes to … work in … morning and comes … home in … evening. 3. I get up at … half past seven in … morning and go to … bed at … quarter to eleven in … evening. 4. When does your mother leave … home for … work? — She leaves … home for … work at … quarter past eight. 5. When do you leave … home for … school? — I leave … home for … school at … half past … eight. 6. What do you do when you come … home from … school? — I do my … homework, talk to my … friends on … phone and go for … walks. I often listen to … music. I like … jazz best. Sometimes I play … computer games.  ',
     rule:
-      ' Перед названиями месяцев и дней недели артикль не употребляется. School begins in ✓ September. We rest on ✓ Sunday. Перед порядковыми числительными обычно употребляется определенный артикль. Our classroom is on the second floor. Today is the tenth of May. ',
+      ' Перед названиями месяцев и дней недели артикль не употребляется. Перед порядковыми числительными обычно употребляется определенный артикль.',
+    ruleBody:
+      '<ul>\n' +
+      '        <li>School begins in September. We rest on Sunday.</li>\n' +
+      '        <li>Our classroom is on the second floor. Today is the tenth of May. </li>\n' +
+      '      </ul> ',
     keys:
       ' 1. Му brother is а pupil. Не goes to school. Не goes to school in the morning. Не has five or six lessons every day. In the afternoon he goes home. At home he does his homework. In the evening he reads books. Не usually goes to bed at  half  past ten. At night he sleeps.2. Му father goes to work in the morning and comes home in  the  evening. 3. 1 get  up at  half  past seven inthe  morning  and  go to  bed · at а quarter to eleven in the evening. 4. When  does  your  mother  leave  home  for  work? - She leaves home for work at  а  quarter past eight. 5.  When  do  you  leave  home  for  school?  - 1 leave home for school at half past eight. 6.  What  do you  do when  you соте  home f rom school? - 1 do my homework, talk to my friends on the phone and go for walks. I often listen to music. 1 like jazz best. Sometimes I play computer games.',
   },
@@ -178,7 +186,8 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. We always go to … Russian Museum on … Sunday. 2. On … Saturday she usually goes to … Philharmonic. 3. In … August he has his … birthday. He is planning to have … nice party with his … friends. 4. There are three rooms and … kitchen in our new flat. 5. My new dress is made of … silk. 6. If you want to write something on … blackboard, you must have … piece of … chalk. 7. Are there any pupils in … classroom? 8. I have … new English book. I find … book quite fascinating. 9. There is … garden in … front of our school. … garden is not large, but it is very nice. 10. … May is … fifth month of the year. 11. … Saturday is … sixth day of the week. 12. … Sunday is … day off. 13. Today is … ninth of … May. Anton has got … new mobile phone. He is going to make … phone call to his … grandfather. 14. This is … nice place. In … June we are going there for … holiday. It’ll be … great fun.  ',
-    rule: ' Запомните следующие устойчивые словосочетания: after ✓ work, after ✓ school, from ✓ work, from ✓ school',
+    rule: ' Запомните следующие устойчивые словосочетания: ',
+    ruleBody: 'after work, from  work, after school, from school',
     keys:
       " 1. We always go to the Russian Museum on Sunday.2. On Saturday she usually goes to the Philharmonic.3. In August he has his birthday. Не is planning to have а nice party with his friends. 4. There are three rooms and а kitchen in our new flat. 5. Му new dress is made of silk. 6. If you want to write something on the blackboard, you must have а piece of chalk. 7. Are there any pupils in the classroom? 8. 1 have а new English book. 1 find the book quite fascinating. 9. There is а garden in front of  our  school. The garden is not large, but it   is very nice. 10. Мау is the fifth month of the year.11. Saturday is the sixth day of the week. 12. Sunday is а day off. 13. Today is the ninth of Мау. Anton has got а new mobile phone. Не is going to make а phone call to his grandfather. 14. This is а nice place. In June we are going there for а holiday. It'l bе great fun.",
   },
@@ -187,8 +196,8 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. This is … classroom. … classroom is large and light. 2. There is … picture on … wall. 3. What is … date today? — It is … seventh of … December. 4. … third lesson today is … lesson of English. 5. Pete, go to … blackboard. 6. After … school I usually go … home. 7. My father always comes from … work late: at eight o’clock or at … half past eight. But on … Friday he comes … home early: at half past four or at … quarter to five. On … Saturday and on … Sunday he does not go to … work. 8. My friends live in … small town. It is … new town. … streets in … town are broad and straight. There are … beautiful buildings in them. … town is very green, and so … air is fresh. There are … beautiful parks and gardens in … town. … people like to go there after … work. In … evening you can hear … sounds of … music from … parks. There are … schools, … libraries, … supermarket, … hospital, … theatre, … cinemas, … clinics and … kindergartens in … town.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: to have (cook, make, prepare) ✓ breakfast ✓ lunch ✓ tea ✓ dinner ✓ supper ',
+    rule: ' Запомните следующие устойчивые словосочетания: ',
+    ruleBody: 'to have (cook, make, prepare) breakfast (lunch , tea,  dinner,  supper) ',
     keys:
       " 1. This is а classroom. The classroom is large and light. 2. There is а picture on the wall. 3. What is the date today? It is the seventh of December. 4. The third lesson today is а lesson of English. 5. Pete, go to the blackboard. 6. After school I usually go home. 7. Му father always comes from work late: at eight o'clock or at half past eight. But on Friday he comes home early: at half past four or at а quarter to five. On Saturday and on Sunday he does not go to work. 8. Му friends live in а small town. It is а new town. The streets in the town are broad and straight. There are beautiful buildings in them. The town is very green, and so the air is fresh. There are (some) beautiful parks and gardens in the town. People like to go there after work. In the evening you can hear the sounds of music from the parks. There are (some) schools, (some) libraries, а supermarket, а hospital, а theatre, (some) cinemas, (some) clinics and (some) kindergartens in the town.",
   },
@@ -205,8 +214,9 @@ const exercise = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. Every day my husband goes to … work, my son goes to … school and I go to … institute. 2. There is … new school at … corner of our street. 3. My daughter came … home from … school on … Monday and said to me, “There will be … parents’ meeting on … tenth of February at six o’clock in … evening.” 4. … teacher read us … very interesting story at … lesson. 5. When … bell rang, … pupils went into … classroom. 6. We are usually at … school from nine o’clock in … morning till two o’clock in … afternoon. 7. We don’t go to … school on … Sunday. 8. We stay at … home and relax. I like to read … books for … relaxation.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: after ✓ breakfast, before ✓ breakfast, after ✓ lunch, before ✓ lunch, after ✓ tea, before ✓ tea, after ✓ dinner, before ✓ dinner, after ✓ supper, before ✓ supper, at ✓ breakfast, for ✓ breakfast, at ✓ lunch, for ✓ lunch, at ✓ tea, for ✓ tea, at ✓ dinner, for ✓ dinner, at ✓ supper, for ✓ supper',
+    rule: ' Запомните следующие устойчивые словосочетания: ',
+    ruleBody:
+      'after breakfast, before breakfast, after lunch, before lunch, after tea, before tea, after dinner, before dinner, after supper, before supper, at breakfast, for breakfast, at lunch, for lunch, at tea, for tea, at dinner, for dinner, at supper, for supper',
     keys:
       " 1. Every day my husband goes to work, my son goes to school and I go to the institute. 2. There is а new school at the corner of our street: 3..Му daughter came home from school on Monday and said to me, \"There will bе а parents' meeting  on  the  tenth  of  February at six o'clock  in  the  evening.\" 4. The teacher  read us а very interesting story at the lesson. 5. When the bell rang, the pupils went into the classroom. 6. We are usually at school from nine o'clock in the morning till two o'clock in the afternoon. 7. We don't go to school on Sunday. 8. We stay at home and relax. 1 like to read books for relaxation.",
   },
