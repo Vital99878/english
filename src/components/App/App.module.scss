@@ -1,21 +1,9 @@
 @import '../../mixins';
 
-h1, h2, h3, h4, h5, h6, p, span,  {
-  @include margin_padding_0
-}
-
-ul, li {
-  @include reset-list;
-}
-html,
-body {
-  margin: auto;
-  padding: 0;
-}
-
 .app {
   font-family: Roboto, sans-serif;
   margin: 36px 18px;
+  padding: 24px;
   height: 100%;
   max-width: 1220px;
   display: grid;
@@ -32,7 +20,6 @@ body {
     margin: 8px 2px;
     grid-row-gap: 16px;
   }
-
 }
 
 button {
@@ -63,21 +50,10 @@ button::-moz-focus-inner {
   display: none;
 }
 
-
 /*
 	Hack to remove background from Mobile Safari.
 	Can't use it globally since it destroys checkboxes in Firefox
 */
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-
 }
-
-
-
-
-
-
-
-
-

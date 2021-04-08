@@ -1,25 +1,25 @@
-@import "src/mixins";
+@import 'src/mixins';
 .keys {
   @include border;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 16px 36px;
-  border:  2px solid silver;
+  padding: 36px;
+  border: 2px solid silver;
   width: 100%;
 
   background-color: #d9f0d9;
-  grid-column: 2 /3 ;
+  grid-column: 2 /3;
 
   @media (max-width: 768px) {
-    grid-column: 1/2 ;
+    grid-column: 1/2;
   }
   @media (max-width: 420px) {
     padding: 16px 12px;
   }
 
-
-  span,p {
+  span,
+  p {
     font-size: 22px;
     line-height: 32px;
   }
@@ -43,7 +43,7 @@
   font-style: italic;
   font-weight: 400;
   background-color: transparent;
-  transition: width .2s;
+  transition: width 0.2s;
 }
 
 .next {
@@ -65,7 +65,6 @@
     height: 100px;
   }
 }
-
 
 h4 {
   margin-top: 16px;

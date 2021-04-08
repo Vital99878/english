@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as actions from '../../redux/actions';
 import Rule from '../Rule';
-import { createIndex } from '../../utilites';
+import { createIndex, debounce } from '../../utilites';
 import classes from './Exercise.module.scss';
 
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) => {
+  goToExercise = debounce(goToExercise, 500);
   const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
 
   useEffect(() => {
@@ -14,7 +15,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
       goToExercise(Number(localStorage.getItem('exercise')));
     }
   }, []);
-  console.log(rule, ruleBody);
 
   const inputName = createIndex();
   const dataForBody = exerciseData.split('…');
