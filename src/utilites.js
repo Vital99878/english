@@ -9,8 +9,8 @@ export function* createIndex() {
 export function debounce(fn, debounceTime) {
   let timeout;
 
-  return function () {
-    let fn_call = () => {
+  return function update() {
+    const fn_call = () => {
       fn.apply(this, arguments);
     };
     clearTimeout(timeout);
