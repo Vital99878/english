@@ -18,20 +18,29 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
 
   const inputName = createIndex();
   const dataForBody = exerciseData.split('…');
-  const exerciseBody = dataForBody.map((item) => (
-    <>
-      <span>{item}</span>
-      <input
-        onChange={(evt) => {
-          evt.target.style.width = `${evt.target.value.length * 16}px`;
-        }}
-        className={classes.input}
-        type="text"
-        name={inputName.next().value}
-        defaultValue="…"
-      />
-    </>
-  ));
+  const exerciseBody = dataForBody.map((item, index) => {
+    if (index === dataForBody.length - 1) {
+      return (
+        <>
+          <span>{item}</span>
+        </>
+      );
+    }
+    return (
+      <>
+        <span>{item}</span>
+        <input
+          onChange={(evt) => {
+            evt.target.style.width = `${evt.target.value.length * 16}px`;
+          }}
+          className={classes.input}
+          type="text"
+          name={inputName.next().value}
+          defaultValue="…"
+        />
+      </>
+    );
+  });
 
   return (
     <article className={classes.mainWrapper}>
