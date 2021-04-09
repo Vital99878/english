@@ -30,6 +30,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise }) =>
       <>
         <span>{item}</span>
         <input
+          key={item}
           onChange={(evt) => {
             evt.target.style.width = `${evt.target.value.length * 16}px`;
           }}
