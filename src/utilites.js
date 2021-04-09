@@ -17,3 +17,11 @@ export function debounce(fn, debounceTime) {
     timeout = setTimeout(fn_call, debounceTime);
   };
 }
+
+export function* inputCheck() {
+  let keyIndex = 0;
+  while (true) {
+    yield keyIndex;
+    keyIndex += 1;
+  }
+}

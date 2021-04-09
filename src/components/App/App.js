@@ -4,6 +4,7 @@ import classes from './App.module.scss';
 import Exercise from '../Exercise';
 import Keys from '../Keys/Keys';
 import Navigation from '../Navigation';
+import { pureKeys } from '../../data/pureKeys';
 
 const App = (exercises_data) => {
   const { number, exercises, keys } = exercises_data;
@@ -11,7 +12,7 @@ const App = (exercises_data) => {
   return (
     <section className={classes.app}>
       <Navigation />
-      <Exercise exercise={exercises[number]} />
+      <Exercise exercise={exercises[number]} pureKeys={pureKeys[`exercise_${number}`]} />
       <Keys keys={keys[number]} number={number} />
     </section>
   );

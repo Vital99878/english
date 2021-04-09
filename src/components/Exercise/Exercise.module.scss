@@ -25,6 +25,8 @@
 }
 
 .exercise {
+  display: flex;
+  flex-direction: column;
   .exerciseTitle {
   }
   .exerciseTodo,
@@ -33,14 +35,12 @@
     line-height: 32px;
 
     .input {
-      border: none;
-      text-align: center;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 22px;
+      @include exerciseInput;
       background-color: transparent;
-      width: 12px;
-      cursor: unset;
+    }
+    .inputWrong {
+      @include exerciseInput;
+      background-color: rgba(255, 46, 46, 0.3);
     }
 
     .input:focus {
@@ -52,6 +52,17 @@
       background-color: transparent;
       transition: width 0.2s;
     }
+  }
+  .checkButton {
+    padding: 4px;
+    margin-right: 16px;
+    margin-left: auto;
+  }
+  .checkButton:hover {
+    padding: 4px;
+    background-color: lightgreen;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
   }
 }
 

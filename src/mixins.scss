@@ -26,3 +26,12 @@
   border-radius: 6px;
   cursor: pointer;
 }
+@mixin exerciseInput {
+  border: none;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  width: 12px;
+  cursor: unset;
+}
