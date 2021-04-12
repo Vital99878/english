@@ -17,7 +17,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
   function checkExercises(data) {
     setCheck(true);
     setAnswers(data);
-
     /* eslint-disable no-console */
     console.log(data);
   }
@@ -53,10 +52,9 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
       );
     }
     return (
-      <>
+      <span key={Math.random() * 100}>
         <span>{item}</span>
         <input
-          key={item}
           className={!check ? classes.input : inputClass.next().value}
           type="text"
           {...register(`key_${inputName.next().value}`)}
@@ -65,7 +63,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
           }}
           defaultValue="…"
         />
-      </>
+      </span>
     );
   });
 

@@ -6,8 +6,8 @@ import Keys from '../Keys/Keys';
 import Navigation from '../Navigation';
 import { pureKeys } from '../../data/pureKeys';
 
-const App = (exercises_data) => {
-  const { number, exercises, keys } = exercises_data;
+const App = (textbook) => {
+  const { number, exercises, keys } = textbook;
 
   return (
     <section className={classes.app}>
