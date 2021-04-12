@@ -18,10 +18,14 @@ export function debounce(fn, debounceTime) {
   };
 }
 
-export function* inputCheck() {
+export function* inputCheckClass(answers, keys, wrongClass) {
   let keyIndex = 0;
   while (true) {
-    yield keyIndex;
+    yield answers[`key_${keyIndex}`] === keys[keyIndex] ||
+    answers[`key_${keyIndex}`] === '…' ||
+    answers[`key_${keyIndex}`] === undefined
+      ? null
+      : wrongClass;
     keyIndex += 1;
   }
 }

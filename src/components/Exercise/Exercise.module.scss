@@ -39,8 +39,7 @@
       background-color: transparent;
     }
     .inputWrong {
-      @include exerciseInput;
-      background-color: rgba(255, 46, 46, 0.3);
+      background-color: rgba(255, 46, 46, 0.2);
     }
 
     .input:focus {

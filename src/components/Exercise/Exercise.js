@@ -4,33 +4,24 @@ import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
 import * as actions from '../../redux/actions';
 import Rule from '../Rule';
-import { createIndex, debounce } from '../../utilites';
+import { createIndex, debounce, inputCheckClass } from '../../utilites';
 import classes from './Exercise.module.scss';
 
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pureKeys }) => {
   goToExercise = debounce(goToExercise, 500);
   const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
   const [answers, setAnswers] = useState({});
-  const [check, setCheck] = useState(false);
   const { register, handleSubmit } = useForm();
 
+  console.log(answers);
+
   function checkExercises(data) {
-    setCheck(true);
     setAnswers(data);
     /* eslint-disable no-console */
     console.log(data);
   }
 
-  function* inputCheckClass() {
-    let keyIndex = 0;
-    while (true) {
-      yield answers[`key_${keyIndex}`] === pureKeys?.[keyIndex] || answers[`key_${keyIndex}`] === '…'
-        ? classes.input
-        : classes.inputWrong;
-      keyIndex += 1;
-    }
-  }
-  let inputClass = inputCheckClass();
+  let wrongClass = inputCheckClass(answers, pureKeys, classes.inputWrong);
 
   useEffect(() => {
     if (localStorage.getItem('exercise')) {
@@ -38,7 +29,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
     }
   }, []);
   useEffect(() => {
-    inputClass = inputCheckClass();
+    wrongClass = inputCheckClass();
   }, [answers]);
 
   const inputName = createIndex();
@@ -52,14 +43,14 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
       );
     }
     return (
-      <span key={Math.random() * 100}>
+      <span key={item}>
         <span>{item}</span>
         <input
-          className={!check ? classes.input : inputClass.next().value}
+          className={`${classes.input} ${wrongClass.next().value}`}
           type="text"
           {...register(`key_${inputName.next().value}`)}
           onChange={(evt) => {
-            evt.target.style.width = `${evt.target.value.length * 12}px`;
+            evt.target.style.width = `${evt.target.value.length * 14}px`;
           }}
           defaultValue="…"
         />
