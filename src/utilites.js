@@ -19,6 +19,7 @@ export function debounce(fn, debounceTime) {
 }
 
 export function* inputCheckClass(answers, keys, wrongClass) {
+  if (!keys) return;
   let keyIndex = 0;
   while (true) {
     yield answers[`key_${keyIndex}`] === keys[keyIndex] ||

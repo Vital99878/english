@@ -1,4 +1,4 @@
-const exercise = [
+const textbook = [
   {
     exerciseNumber: 0,
     keys: 'АРТИКЛb',
@@ -61,10 +61,15 @@ const exercise = [
     exerciseNumber: 6,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
-      ' 1. We have … large … family. 2. My granny of ten tells us … long … interesting … stories. 3. My … father is … engineer. He works in … factory. … factory is large. 4. My … mother is … doctor. She works at … large … hospital. She is at … work now. 5. My … aunt is … teacher. She works at … school. … school is good. My … aunt is not at … school now. She is at … home. She is drinking … tea and eating … jam. … jam is sweet. I am at … home, too. I am drinking … tea and eating … sandwich. … sandwich is tasty. 6. My sister is at … school. She is … pupil. 7. My cousin has … big … black … cat. My cousin’s … cat has two … kittens. … cat likes … milk. … kittens like … milk, too. 8. I am … engineer. 9. My … son is … pupil. 10. He is … good … pupil. 11. This is … house. 12. This is my … laptop. 13. You have some … pencils, but I have no … pencil. Give me … pencil, please. 14. It’s … small … animal that has … long … ears, … short … tail, and … soft … hair.  ',
+      ' 1. We have … large … family. 2. My granny often tells us … long … interesting … stories. 3. My … father is … engineer. He works in … factory. … factory is large. 4. My … mother is … doctor. She works at … large … hospital. She is at … work now. 5. My … aunt is … teacher. She works at … school. … school is good. My … aunt is not at … school now. She is at … home. She is drinking … tea and eating … jam. … jam is sweet. I am at … home, too. I am drinking … tea and eating … sandwich. … sandwich is tasty. 6. My sister is at … school. She is … pupil. 7. My cousin has … big … black … cat. My cousin’s … cat has two … kittens. … cat likes … milk. … kittens like … milk, too. 8. I am … engineer. 9. My … son is … pupil. 10. He is … good … pupil. 11. This is … house. 12. This is my … laptop. 13. You have some … pencils, but I have no … pencil. Give me … pencil, please. 14. It’s … small … animal that has … long … ears, … short … tail, and … soft … hair.  ',
     rule: ' Часто, даже упоминая предмет впервые, мы, тем не менее, употребляем перед ним определенный артикль:',
     ruleBody:
-      'а) если упоминаемый предмет является единственным в мире. , Например. The sun is shining brightly., б) если этот предмет является определенным по ситуации. Например.  Put the book on the table. ',
+      '<ul>\n' +
+      '        <li>если упоминаемый предмет является <b>единственным в мире</b>. </li>\n' +
+      '        <li>Например. <b>The sun</b> is shining brightly.</li>\n' +
+      '        <li>если этот предмет является <b>определенным по ситуации.</b> </li>\n' +
+      '        <li>Например. Put the book on <b>the table.</b></li>\n' +
+      '      </ul>',
     keys:
       " 1. We have а large family. 2. Му granny often tells us long interesting stories. 3. Му father is an engineer. Не works in а factory. The factory is large. 4. Му mother is а doctor. She works at а large hospital. She is at work now. 5. Му aunt is а teacher. She works at а school. The school is good. Му aunt isn't at school now. She is at home. She is drinking tea and eating  jam. The  jam is sweet. 1 am at home, too. 1 am drinking tea and eating а sandwich. The sandwich is  tasty. 6. Му sister is at school. She is а pupil. 7. Му cousin has а big black cat. Му cousin's cat has two kittens. The cat likes milk. The kittens like milk, too. 8. 1 am an engineer. 9.Му son is а pupil. 10. Не is а good pupil. 11. This is а house.12. This is my laptop. 13. You have some pencils, but 1 have no pencil. Give me а pencil, please. 14. It's а small animal that has long ears, а short tail, and soft hair. ",
   },
@@ -84,7 +89,12 @@ const exercise = [
     rule:
       'Кроме того, существует огромное количество так называемых устойчивых словосочетаний, в которых артикль употребляется или отсутствует традиционно. Эти словосочетания приходится заучивать наизусть. ',
     ruleBody:
-      'Запомните следующие конструкции: <ul><li>There is a … </li><li>Where is the … ?</li> <li>The (book) is on the (table)</li>  <li>The (book) is on a little (table)</li></ul>',
+      'Запомните следующие конструкции: <ul>' +
+      '<li> - There is a … </li>' +
+      '<li>- Where is the … ?</li>' +
+      '<li> - The (book) is on the (table)</li>' +
+      '<li> - The (book) is on a little (table)</li>' +
+      '</ul>',
     keys:
       "1. This is а good book. Take the book from the tаblе. Put this book in the bookcase. 2. The weather is fine today. The sky is blue. The sun is shining brightly in the blue sky. 3. This is а bоу. The bоу is at school. Не is а pupil. This bоу is my brother's friend. Не has а cat, but he has no dog. Не likes his cat. Не gives the cat milk every day. 4. Yesterday I received а letter from my friend. The letter was important. 5. We live in а big house. 1 like the house very much. 6. Are you а worker? - No, 1 am а student. 7. 1like your beautiful flower. Give me the flower, please. 8. Му mother is at home. She is reading а marvellous story. 9. Му father is not at home. Не is at work. Не is not а lawyer. Не is а doctor. Не is а good doctor. Не works at а hospital. The hospital is large. 10. That is а book. The book is thick. That book isn't thin. This is an interesting thick book. 11. Those are books. The books are new and old. Those are new and old books. Those books are interesting. ",
   },
@@ -92,7 +102,7 @@ const exercise = [
     exerciseNumber: 9,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
-      ' 1. There is … big tree in … garden. 2. There is … bank near here. — Where is … bank? 3. There  is … new supermarket in … centre of our … town. 4. There is … hotel over there. … hotel isn’t cheap. 5. Where is … cat? — … cat is on … sofa. 6. Where is … book? — … book is on … shelf. 7. Where are … flowers? — … flowers are in … beautiful vase. 8. Where is … vase? — … vase is on … little table near … window. 9. Open … window, please. … 1  I can see … sun in … sky. I can see … nice little bird. … bird is sitting in …  big tree. … tree is green. 10. There is … little white cloud in … sky. 11. What … beautiful … day! 12. We have … large room. There is … big sofa in … room and … little lamp on … wall over … sofa. I like to  sit on … sofa and read … good book. 13. This is … computer. … computer isn’t old. This … computer is new. This is … good new computer. 14. These are … computers. … computers are new. These are n’t … old computers. These are … new computers. These … computers are good.  ',
+      ' 1. There is … big tree in … garden. 2. There is … bank near here. — Where is … bank? 3. There  is … new supermarket in … centre of our … town. 4. There is … hotel over there. … hotel isn’t cheap. 5. Where is … cat? — … cat is on … sofa. 6. Where is … book? — … book is on … shelf. 7. Where are … flowers? — … flowers are in … beautiful vase. 8. Where is … vase? — … vase is on … little table near … window. 9. Open … window, please. … weather is fine today.  I can see … sun in … sky. I can see … nice little bird. … bird is sitting in …  big tree. … tree is green. 10. There is … little white cloud in … sky. 11. What … beautiful … day! 12. We have … large room. There is … big sofa in … room and … little lamp on … wall over … sofa. I like to  sit on … sofa and read … good book. 13. This is … computer. … computer isn’t old. This … computer is new. This is … good new computer. 14. These are … computers. … computers are new. These are n’t … old computers. These are … new computers. These … computers are good.  ',
     rule:
       ' Существительное, стоящее в скобках, может быть любым. Прилагательное также может быть любым. Вместо предлога on может быть любой другой предлог или заменяющее его словосочетание, напр. in front of. weather is fine today. Запомните следующее устойчивое словосочетание: in ✓ front (of) ',
     keys:
@@ -105,7 +115,11 @@ const exercise = [
       ' 1. There is … wonderful small computer in … front of … books there. 2. Where is … soup? — … soup is in … big saucepan on … gas cooker. 3. Where are … cutlets? — … cutlets are in … refrigerator on … little plate. 4. There is no … bread on … table. Where is … bread? 5. There is … little brown coffee table in our … room in … front of … sofa. 6. Where is … table in your … room? 7. There is … thick carpet on … floor in my mother’s … room. 8. Is your brother at … home? — No, he is at … work. He works in … big factory. He is … engineer. 9. My sister has many … books. … books are in … big bookcase. She has really … good … taste in … books. 10. … weather is fine today. Let’s go and play in … yard. There are many … children in … yard. They are playing with … ball.  ',
     rule: ' Запомните следующие конструкции, требующие неопределенного артикля:',
     ruleBody:
-      ' I have a …, This is a …, I am a …, Не has a …, That is a …, Не is a …, I see a …, It is a …, She is a …, There is a … ',
+      '<ul>\n' +
+      '        <li> I have a … Не has a …</li>\n' +
+      '        <li> This is a … There is a … That is a …</li>\n' +
+      '        <li> I am a … Не is a … She is a … I see a … It is a …</li>\n' +
+      '      </ul> ',
     keys:
       " 1. There is а wonderful small computer in front of the  books  there.  2. Where is  the  soup?  - The soup is in а big saucepan on the gas cooker. 3. Where are  the  cutlets?  - The cutlets  are  in  the  refrigerator  on а little plate. 4. There is no bread on the tаblе. Where  is the bread? 5. There is а little brown coffee tаblе in our room in front of the sofa. 6. Where is the tаblе in your room? 7. There is а thick carpet on the floor in  my mother's room. 8. 1s your brother at home? - No, he is at work. Не works in а big factory. Не is an engineer. 9. Му sister has many books. The books are in а big bookcase. She has really good taste in books.10. The weather is fine today. Let's go and play in the yard. There are many children in the yard. They are playing with а ball.",
   },
@@ -117,7 +131,7 @@ const exercise = [
     rule: ' Запомните следующие устойчивые словосочетания:',
     ruleBody: 'in the middle, in the corner, to the right, to the left',
     keys:
-      " 1. 1 see а bottle of pineapple juice on the kitchen tаblе.2. Her son has а great sense of humor. 3. There was а disco at the club last Sunday but he didn't go. 4. 1s there а bus stop near the building? 5. We have а big dog. The dog is very clever. 6. Му friend has а very good computer.7. This bоу is big. Не is а student. 8. There is а large piano in the hall. 9. This is а tree and that is not а tree. It's а bush. 10. 1am а bоу. 1 am а pupil. 1study at school.11. Му sister is at work. She is а secretary. She works for а new company. 12. This is а very difficult question. 1 don't know the answer to it. 13. Do you see а little girl with а big ball in her hands? She is а pupil of our school.14. There was а beautiful flower in this vase yesterday. Where is the flower now? 15. Last year we were in Geneva. lt is an exciting city to visit, but а very expensive place to live.",
+      " 1. I see а bottle of pineapple juice on the kitchen tаblе.2. Her son has а great sense of humor. 3. There was а disco at the club last Sunday but he didn't go. 4. 1s there а bus stop near the building? 5. We have а big dog. The dog is very clever. 6. Му friend has а very good computer.7. This bоу is big. Не is а student. 8. There is а large piano in the hall. 9. This is а tree and that is not а tree. It's а bush. 10. 1am а bоу. 1 am а pupil. 1study at school.11. Му sister is at work. She is а secretary. She works for а new company. 12. This is а very difficult question. 1 don't know the answer to it. 13. Do you see а little girl with а big ball in her hands? She is а pupil of our school.14. There was а beautiful flower in this vase yesterday. Where is the flower now? 15. Last year we were in Geneva. lt is an exciting city to visit, but а very expensive place to live.",
   },
   {
     exerciseNumber: 12,
@@ -3990,4 +4004,4 @@ const exercise = [
       ' 1. Я должна купить торт сегодня. 2. Мой брат не умеет говорить по-фински. 3. Моя сестра умеет говорить по-польски. 4. Можно, я посмотрю вашу фотографию? 5. Вы можете показать мне свою фотографию? 6. Не может быть, что ему сорок лет: он выглядит гораздо моложе. 7. Не может быть, что он забыл прийти. Он, должно быть, был очень занят. 8. Мы, может быть, поедем за город, если будет хорошая погода. 9. Если сестра не купит мне кофе, мне придется идти в магазин самой. 10. Я не могу найти свои часы. — Может быть, вы оставили их на работе. — Нет, я не могла оставить их на работе: я никогда не снимаю их с руки. 11. Вы сможете поговорить с ним завтра? 12. Я, должно быть, заблудилась. Вы не можете мне сказать, как пройти к Эрмитажу? 13. Мне пришлось прочесть массу книг, когда я готовилась к докладу. 14. Я не мог вспомнить последние строчки сонета, и мне пришлось звонить своему другу. 15. Ты не можешь смотреть телевизор до тех пор, пока не сделаешь домашнее задание. 16. Мы должны поддерживать контакт друг с другом. 17. Не беспокойтесь, я смогу прийти.',
   },
 ];
-export default exercise;
+export default textbook;

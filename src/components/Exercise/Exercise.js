@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
 import * as actions from '../../redux/actions';
 import Rule from '../Rule';
+import Modal from '../Modal';
 import { createIndex, debounce, inputCheckClass } from '../../utilites';
 import classes from './Exercise.module.scss';
 
@@ -12,11 +13,12 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
   const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
   const [answers, setAnswers] = useState({});
   const { register, handleSubmit } = useForm();
-
-  console.log(answers);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   function checkExercises(data) {
     setAnswers(data);
+    setModalIsOpen(true);
+    data.exerciseNumber = exerciseNumber;
     /* eslint-disable no-console */
     console.log(data);
   }
@@ -60,6 +62,12 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
 
   return (
     <article className={classes.mainWrapper}>
+      <Modal
+        keys={answers}
+        exerciseNumber={exerciseNumber}
+        open={modalIsOpen}
+        closeModal={() => setModalIsOpen(false)}
+      />
       <div className={classes.exercise}>
         <h2 className={classes.exerciseTitle}>{`Упражнение  №${exerciseNumber}`}</h2>
         <span className={classes.exerciseTodo}>{todo}</span>

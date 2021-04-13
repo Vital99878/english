@@ -1,27 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import classes from './App.module.scss';
 import Exercise from '../Exercise';
-import Keys from '../Keys/Keys';
+import Keys from '../Keys';
 import Navigation from '../Navigation';
 import { pureKeys } from '../../data/pureKeys';
 
-const App = (textbook) => {
-  const { number, exercises, keys } = textbook;
+const App = ({ textbook, exerciseNumber }) => (
+  <section className={classes.app}>
+    <Navigation />
+    <Exercise exercise={textbook[exerciseNumber]} pureKeys={pureKeys?.[`exercise_${exerciseNumber}`]} />
+    <Keys keys={textbook[exerciseNumber].keys} number={exerciseNumber} />
+  </section>
+);
 
-  return (
-    <section className={classes.app}>
-      <Navigation />
-      <Exercise exercise={exercises[number]} pureKeys={pureKeys[`exercise_${number}`]} />
-      <Keys keys={keys[number]} number={number} />
-    </section>
-  );
+App.propTypes = {
+  textbook: PropTypes.arrayOf.isRequired,
+  exerciseNumber: PropTypes.number.isRequired,
 };
-
 const mapStateToProps = (state) => ({
-  exercises: state.exercisesReducer.exercises,
-  keys: state.exercisesReducer.keys,
-  number: state.exercisesReducer.number,
+  textbook: state.exercisesReducer.textbook,
+  exerciseNumber: state.exercisesReducer.exerciseNumber,
 });
 
 export default connect(mapStateToProps, null)(App);
