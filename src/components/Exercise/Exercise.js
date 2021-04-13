@@ -17,10 +17,10 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
 
   function checkExercises(data) {
     setAnswers(data);
-    setModalIsOpen(true);
+    if (!pureKeys) {
+      setModalIsOpen(true);
+    }
     data.exerciseNumber = exerciseNumber;
-    /* eslint-disable no-console */
-    console.log(data);
   }
 
   let wrongClass = inputCheckClass(answers, pureKeys, classes.inputWrong);
@@ -73,7 +73,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
         <span className={classes.exerciseTodo}>{todo}</span>
         <p className={classes.exerciseBody}>{exerciseBody}</p>
         <button className={classes.checkButton} type="button" onClick={handleSubmit(checkExercises)}>
-          Проверить
+          {pureKeys ? 'Проверить' : 'Отправить ответы'}
         </button>
       </div>
       <Rule rule={rule} ruleBody={ruleBody} />
