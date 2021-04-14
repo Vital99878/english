@@ -35,7 +35,36 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
     wrongClass = inputCheckClass();
   }, [answers]);
 
+  // todo Исправить в exercises_data exerciseBody и удалить затем данное условие ключи до 200 упражнения
+  if (!exercise.exerciseBody) {
+    return (
+      <article className={classes.mainWrapper}>
+        Пока недоступно.
+        <form className={classes.nextPrevWrapper}>
+          <button type="button" className={classes.nextPrev} onClick={() => previousExercise(Number(exerciseNumber))}>
+            Prev
+          </button>
+          <button type="button" className={classes.nextPrev} onClick={() => nextExercise(Number(exerciseNumber))}>
+            Next
+          </button>
+          <input
+            type="number"
+            placeholder="go to "
+            className={classes.goTo}
+            onChange={(evt) => {
+              const number = evt.target.value;
+              if (number >= 1 && number < 568) {
+                goToExercise(number);
+              }
+            }}
+          />
+        </form>
+      </article>
+    );
+  }
+
   const inputName = createIndex();
+
   const dataForBody = exerciseData.split('…');
   const exerciseBody = dataForBody.map((item, index) => {
     if (index === dataForBody.length - 1) {
