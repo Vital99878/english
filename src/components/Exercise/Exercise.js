@@ -27,7 +27,8 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
 
   useEffect(() => {
     if (localStorage.getItem('exercise')) {
-      goToExercise(Number(localStorage.getItem('exercise')));
+      const numberFromLS = Number(localStorage.getItem('exercise'));
+      goToExercise(numberFromLS);
     }
   }, []);
   useEffect(() => {
@@ -48,6 +49,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
       <span key={item}>
         <span>{item}</span>
         <input
+          key={item}
           className={`${classes.input} ${wrongClass.next().value}`}
           type="text"
           {...register(`key_${inputName.next().value}`)}
@@ -89,7 +91,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
           placeholder="go to "
           className={classes.goTo}
           onChange={(evt) => {
-            window.scrollTo(0, 0);
             const number = evt.target.value;
             if (number >= 1 && number < 568) {
               goToExercise(number);

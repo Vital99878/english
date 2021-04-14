@@ -163,9 +163,13 @@ const textbook = [
     exerciseNumber: 15,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
-      ' 1. Where is … bus station? — … bus station is next to … gas station. 2. There are two … pets in … house: … cat and … dog. 3. There is … TV antenna on … roof. 4. There is … mailbox between … building and … bus stop. 5. There is … big … dog in … front of … fireplace. 6. Do you speak English at … work? 7. She had … bad … day today. 8. I have … colour TV set. … TV set is on … little table in … corner of … room. 9. There is … book, … pen, and … paper on my … writing desk. 10. My … brother is … teacher. He works at … school. He has … very good books. His … books are in … big bookcase. 11. There is … tea in my … glass. There is no … tea in my … friend’s … glass. His … glass is empty. 12. Where is … cof fee table in your … room? — … coffee table is in … front of … sofa. There is … cup on … coffee table and … box of … chocolates. There is … coffee in … cup. 13. There are … photographs and newspapers on … sofa. 14. There is … guitar on … chair near … piano. 15. There was … piano in … corner of … living room. He sat at … piano for … hours, playing … favourite pieces from … classical music. He was … wonderful piano player.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: in the morning, in the evening, in the afternoon, at ✓ night,А также, to go to ✓ bed, to go to ✓ school, to go to ✓ work ',
+      ' 1. Where is … bus station? — … bus station is next to … gas station. 2. There are two … pets in … house: … cat and … dog. 3. There is … TV antenna on … roof. 4. There is … mailbox between … building and … bus stop. 5. There is … big … dog in … front of … fireplace. 6. Do you speak English at … work? 7. She had … bad … day today. 8. I have … colour TV set. … TV set is on … little table in … corner of … room. 9. There is … book, … pen, and … paper on my … writing desk. 10. My … brother is … teacher. He works at … school. He has … very good books. His … books are in … big bookcase. 11. There is … tea in my … glass. There is no … tea in my … friend’s … glass. His … glass is empty. 12. Where is … cof fee table in your … room? — … coffee table is in … front of … sofa. There is … cup on … coffee table and … box of … chocolates. There is … coffee in … cup. 13. There are … photographs and … newspapers on … sofa. 14. There is … guitar on … chair near … piano. 15. There was … piano in … corner of … living room. He sat at … piano for … hours, playing … favourite pieces from … classical music. He was … wonderful piano player.  ',
+    rule: ' Запомните следующие устойчивые словосочетания:',
+    ruleBody:
+      '<ul>\n' +
+      '        <li>in the morning, in the evening, in the afternoon,at night</li>\n' +
+      '        <li>to go to bed, to go to school, to go to work</li>\n' +
+      '      </ul> ',
     keys:
       " 1. Where is the bus station?- The bus station is next to the gas station. 2. There are two pets in the house: а cat and а dog. 3. There is а TV antenna on the roof.4. There is а mailbox between the building and the bus stop. 5. There is а blg dog in front of the fireplace.6. Do you speak English at work? 7. She had а bad day today. 8. 1have а colour TV set. TheTV set-is on а little tаblе in the corner of the room. 9. There is а book, а pen, and  (some) paper on my writing desk. 10. Му brother is  а teacher. Не works at а school. Не has very good books. His books are in а big bookcase. 11. There is (some) tea in my glass. There is no tea in  my friend's  glass. His glass is empty. 12. Where is the coffee tаblе in your room? - The coffee tаblе is in front of the sofa. There is а cup on the coffee tаblе and а bох of chocolates. There is (some) coffee in the cup. 13. There are (some) photographs and (some) newspapers on the  sofa.  14.  There  is  а  guitar on the chair near the piano.  15. There  was а  piano  in the corner of the living room. Не sat at the piano for hours, playing favourite  pieces  from  classical  music. Не was а wonderful piano player.",
   },
@@ -176,7 +180,11 @@ const textbook = [
       ' 1. Every day my … brother and I get up at eight o’clock and walk to … school. I like … school. It’s … fun. My … brother loves … football. He hates … homework. So he does n’t like to go to … school. Will he go to … work in … future? 2. My … friend has to get up early in … morning because he goes to … school. That’s why he usually goes to … bed early in … evening. 3. … weather was very bad in … morning yesterday. … sky was grey and it was raining. But in … middle of … day … weather began to change. … rain stopped and … sun appeared from behind … clouds. In … afternoon it was very warm. I did not want to stay at … home and went into … yard. There were … boys and … girls in … yard. We played in … yard till late in … evening. When I came … home,  I drank … tea, ate … sandwich and went to … bed at once. I slept very well at … night.  ',
     rule: ' Запомните следующие устойчивые словосочетания:',
     ruleBody:
-      ' at ✓ half past five, at a quarter past five, to go ✓ home, to come ✓ home, to leave ✓ home for ✓ work (for ✓ school)',
+      '<ul>\n' +
+      '        <li>at half past five, at a quarter past five</li>\n' +
+      '        <li>to go home, to come home</li>\n' +
+      '        <li>to leave home for work (for school)</li>\n' +
+      '      </ul> ',
     keys:
       " 1. Every day my brother and I get up at eight o'clock and walk to school. 1 like school. It's fun. Му brother loves football. Не hates homework. So he doesn't like to go to school. Will he go to work in the future? 2. Му friend has to get up early in the morning because he goes to school. That's why he usually goes to bed early in the evening. 3. The weather was very bad in the morning yesterday. The sky was grey and it was raining. But in the middle of the day the weather began to change. The rain stopped and the sun appeared from behind the clouds. In the afternoon it was very warm. 1 did not want to stay at home and went into the yard. There were boys and girls in the yard. We played in the yard till late in the evening. When I came home, 1 drank tea, ate а sandwich and went to bed at once. 1 slept very well at night.",
   },
@@ -193,7 +201,7 @@ const textbook = [
       '        <li>Our classroom is on the second floor. Today is the tenth of May. </li>\n' +
       '      </ul> ',
     keys:
-      ' 1. Му brother is а pupil. Не goes to school. Не goes to school in the morning. Не has five or six lessons every day. In the afternoon he goes home. At home he does his homework. In the evening he reads books. Не usually goes to bed at  half  past ten. At night he sleeps.2. Му father goes to work in the morning and comes home in  the  evening. 3. 1 get  up at  half  past seven inthe  morning  and  go to  bed · at а quarter to eleven in the evening. 4. When  does  your  mother  leave  home  for  work? - She leaves home for work at  а  quarter past eight. 5.  When  do  you  leave  home  for  school?  - 1 leave home for school at half past eight. 6.  What  do you  do when  you соте  home f rom school? - 1 do my homework, talk to my friends on the phone and go for walks. I often listen to music. 1 like jazz best. Sometimes I play computer games.',
+      ' 1. Му brother is а pupil. Не goes to school. Не goes to school in the morning. Не has five or six lessons every day. In the afternoon he goes home. At home he does his homework. In the evening he reads books. Не usually goes to bed at  half  past ten. At night he sleeps.2. Му father goes to work in the morning and comes home in  the  evening. 3. 1 get  up at  half  past seven in the  morning  and  go to  bed · at а quarter to eleven in the evening. 4. When  does  your  mother  leave  home  for  work? - She leaves home for work at  а  quarter past eight. 5.  When  do  you  leave  home  for  school?  - 1 leave home for school at half past eight. 6.  What  do you  do when  you come  home from school? - I do my homework, talk to my friends on the phone and go for walks. I often listen to music. 1 like jazz best. Sometimes I play computer games.',
   },
   {
     exerciseNumber: 18,
@@ -1330,10 +1338,12 @@ const textbook = [
   },
   {
     exerciseNumber: 152,
-    todo:
-      ' Переведите на английский язык следующие слово- сочетания. В четыре часа, в половине шестого, без четверти три, на закате, в четверть пятого, в полночь, в пять минут шестого, без десяти два, в полдень, на восходе солнца, в двадцать пять минут третьего. Предлог времени: ON в воскресенье — on Sunday пятого марта — on the 5th of March ',
+    todo: ' Переведите на английский язык следующие словосочетания.',
+    exerciseBody:
+      'В четыре часа …, в половине шестого …, без четверти три …, на закате …, в четверть пятого …, в полночь …, в пять минут шестого …, без десяти два …, в полдень …, на восходе солнца …, в двадцать пять минут третьего ….',
     keys:
-      " 2At four o'clock, at half past five, at а quarter  to three, at sunset, at а quarter past four, at midnight, at five minutes past five, at ten minutes to two, at  noon, at sunrise, at twenty-five minutes past two.",
+      "At four o'clock, at half past five, at а quarter  to three, at sunset, at а quarter past four, at midnight, at five minutes past five, at ten minutes to two, at  noon, at sunrise, at twenty-five minutes past two",
+    rule: 'Предлог времени: ON (в воскресенье — on Sunday), (пятого марта — on the 5th of March)',
   },
   {
     exerciseNumber: 153,

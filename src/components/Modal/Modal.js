@@ -12,6 +12,12 @@ function ModalDelete({ keys, exerciseNumber, open, closeModal }) {
     document.execCommand('copy');
   }
 
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+
   return (
     open && (
       <div className={classes.modal}>
