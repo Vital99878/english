@@ -238,7 +238,12 @@ const textbook = [
       ' 1. Every day my husband goes to … work, my son goes to … school and I go to … institute. 2. There is … new school at … corner of our street. 3. My daughter came … home from … school on … Monday and said to me, “There will be … parents’ meeting on … tenth of February at six o’clock in … evening.” 4. … teacher read us … very interesting story at … lesson. 5. When … bell rang, … pupils went into … classroom. 6. We are usually at … school from nine o’clock in … morning till two o’clock in … afternoon. 7. We don’t go to … school on … Sunday. 8. We stay at … home and relax. I like to read … books for … relaxation.  ',
     rule: ' Запомните следующие устойчивые словосочетания: ',
     ruleBody:
-      'after breakfast, before breakfast, after lunch, before lunch, after tea, before tea, after dinner, before dinner, after supper, before supper, at breakfast, for breakfast, at lunch, for lunch, at tea, for tea, at dinner, for dinner, at supper, for supper',
+      '<ul>\n' +
+      '        <li>after breakfast, before breakfast, after lunch, before lunch</li>\n' +
+      '        <li>after tea, before tea, after dinner, before dinner</li>\n' +
+      '        <li>after supper, before supper, at breakfast, for breakfast</li>\n' +
+      '        <li>at lunch, for lunch, at tea, for tea, at dinner, for dinner, at supper, for supper</li>\n' +
+      '      </ul> ',
     keys:
       " 1. Every day my husband goes to work, my son goes to school and I go to the institute. 2. There is а new school at the corner of our street: 3..Му daughter came home from school on Monday and said to me, \"There will bе а parents' meeting  on  the  tenth  of  February at six o'clock  in  the  evening.\" 4. The teacher  read us а very interesting story at the lesson. 5. When the bell rang, the pupils went into the classroom. 6. We are usually at school from nine o'clock in the morning till two o'clock in the afternoon. 7. We don't go to school on Sunday. 8. We stay at home and relax. 1 like to read books for relaxation.",
   },
@@ -255,7 +260,8 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. For … breakfast I have … coffee with … milk and … sugar. I have … jam, too. There are … different things on … dinner table. There is … bread, … butter and … ham. There are … cups and … glasses there. There is … jug on … table. … milk in … jug is hot. There is … teapot on … table. There is … tea in … teapot. … tea is hot, too. There are … plates, … forks and … knives on … table. 2. … lamp is on … table. 3. There is … lamp on … table. 4. Is there … lamp on … table? 5. Is … lamp on … table? 6. Is there … clock on … wall? 7. There are two … shelves on … wall. 8. Where are … shelves? — … shelves are on … wall. 9. They have … large flat. There are … four rooms in … flat. 10. Is … newspaper on … table? 11. Is there … newspaper on … table? 12. There is … butter on … plate. 13. Where is … butter? — … butter is on … little plate. 14. There is … white and … brown bread on … table. 15. What time do you usually have … dinner? — We have … dinner at five. 16. We often have … fish for … dinner.  ',
-    rule: ' Запомните следующее устойчивое словосочетание: to watch ✓ TV ',
+    rule: ' Запомните следующее устойчивое словосочетание:  ',
+    ruleBody: 'to watch TV',
     keys:
       ' 1. For breakfast I have coffee with milk and sugar. 1 have jam, too. There are different things on the dinner tаblе. There is (some) bread, (some) butter and (some) ham. There are (some) cups and (some) glasses there. There is а jug on the tаblе. The milk in the jug is hot. There is а teapot on the tаblе. There is tea in the teapot. The tea is hot, too. There are (some) plates, (some) forks and (some) knives on the tаblе. 2. The lamp is on the tаblе. 3. There is а .lamp on the tаblе.4. 1s there а lamp on the tаblе? 5. 1s the lamp on the tаblе? 6. 1s there а clock on the wall? 7. There are  two shelves on the wall. 8. Where are the shelves? - The shelves are on the wall. 9. They have а large flat. There are four rooms in the flat. 10.1s the newspaper on  the  tаblе?  11. 1s there а newspaper  on  the tаblе?12. There is (some) butter on the plate. 13. Where is the butter? - The butter is on а little plate. 14. There is (some) white and brown bread on the tаblе. 15. What time do you usually have dinner? - Wе eat dinner at five. 16. We often have fish for dinner.',
   },

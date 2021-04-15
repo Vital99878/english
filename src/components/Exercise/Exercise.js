@@ -93,21 +93,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
 
   return (
     <article className={classes.mainWrapper}>
-      <Modal
-        keys={answers}
-        exerciseNumber={exerciseNumber}
-        open={modalIsOpen}
-        closeModal={() => setModalIsOpen(false)}
-      />
-      <div className={classes.exercise}>
-        <h2 className={classes.exerciseTitle}>{`Упражнение  №${exerciseNumber}`}</h2>
-        <span className={classes.exerciseTodo}>{todo}</span>
-        <p className={classes.exerciseBody}>{exerciseBody}</p>
-        <button className={classes.checkButton} type="button" onClick={handleSubmit(checkExercises)}>
-          {pureKeys ? 'Проверить' : 'Отправить ответы'}
-        </button>
-      </div>
-      <Rule rule={rule} ruleBody={ruleBody} />
       <form className={classes.nextPrevWrapper}>
         <button type="button" className={classes.nextPrev} onClick={() => previousExercise(Number(exerciseNumber))}>
           Prev
@@ -127,6 +112,21 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
           }}
         />
       </form>
+      <Modal
+        keys={answers}
+        exerciseNumber={exerciseNumber}
+        open={modalIsOpen}
+        closeModal={() => setModalIsOpen(false)}
+      />
+      <div className={classes.exercise}>
+        <h2 className={classes.exerciseTitle}>{`Упражнение  №${exerciseNumber}`}</h2>
+        <span className={classes.exerciseTodo}>{todo}</span>
+        <p className={classes.exerciseBody}>{exerciseBody}</p>
+        <button className={classes.checkButton} type="button" onClick={handleSubmit(checkExercises)}>
+          {pureKeys ? 'Проверить' : 'Отправить ответы'}
+        </button>
+      </div>
+      <Rule rule={rule} ruleBody={ruleBody} />
     </article>
   );
 };
