@@ -286,8 +286,8 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' My friend’s … flat is very comfortable. There are … three rooms in … flat: … living room, … study and … bedroom. … living room is not very large. … walls in … living room are blue. There are … pictures on … walls. There is … table in … middle of … room with some chairs around it. To … left of … door there is … sofa. Near … sofa there are … two large armchairs. They are very comfortable. There is … piano in my friend’s living room. … piano is to … right of … door. … bedroom and … study are small. … furniture in … flat is brown.  ',
-    rule:
-      ' Если перед существительным стоит вопросительное или относительное местоимение, артикль опускается. Например: What ✓ colour is your cat? I want to know what ✓ book you are reading. ',
+    rule: ' Если перед существительным стоит вопросительное или относительное местоимение, артикль опускается. ',
+    ruleBody: 'Например: What colour is your cat? I want to know what book you are reading.',
     keys:
       " Му friend's flat is very comfortable. There are three rooms in the flat: а living room, а study and а bedroom. The living room is not very large. The walls in the living room are blue. There are (some) pictures on the walls. There is а tаblе in the middle of the room with some chairs around it. То the left of the door there is а sof а. Near the sofa there are two large armchairs. They are very comfortable. There is а piano in my friend's living room. The piano is to the right of the door. The bedroom and the study are small. The furniture in the flat is brown.",
   },
@@ -304,8 +304,8 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' Here is … large window. We can see … room through … window. Opposite … window there is … door. On … door there is … curtain. In … corner of … room there is … round table. We can see … books and … telephone on it. There is … bookshelf over … table. On … bookshelf we can see … newspapers and … book by … Jack London. There are … two … pictures in … room. One … picture is small, … other picture is very large. There are … two bookcases in … room. … bookcases are full of … books. There is … large sofa in … room. On … sofa we can see … bag. Whose … bag is that? There is no … bed in … room. There are … flowers and … glass of … water on … small table near … window. In … front of … window we can see … armchair. It is … comfortable … armchair.  ',
-    rule:
-      ' Перед названиями наук, учебных предметов и языков артикль не употребляется. Например: He studies ✓ chemistry. I speak ✓ English. ',
+    rule: ' Перед названиями наук, учебных предметов и языков артикль не употребляется.',
+    ruleBody: 'Например: He studies chemistry. I speak English.',
     keys:
       ' 28Неге is а large window. Through the window we can see а room. Opposite the window  there  is  а  door. 0n the door there is а curtain. In the corner of the room there is а round tаblе. On it we can see  (some) books and а telephone. There is а bookshelf over the tаblе. On the bookshelf we can see (some) newspapers and а book bу Jack London. There are two pictures in the room. One picture is small, the other picture is very large. There are two bookcases in the room. The bookcases are full of books. There is а large sofa in the room. On the sofa we can see а bag. Whose bag is that? There is no bed in the room. On а small tаblе near the window there are (some) flowers and а glass of water. In front of the window we can see an armchair. It is а comfortable armchair.',
   },
@@ -315,7 +315,9 @@ const textbook = [
     exerciseBody:
       ' 1. … English is … international language. 2. I study … English. I attend … English classes in … evening. On … days when I have no … classes, I stay at … home and do some work about … house. I have … dinner with my … family. After … dinner I talk with … members of my … family, watch … TV and read … books, … newspapers and … magazines. I go to … bed late at … night. 3. I am thirsty. Give me … water, please. 4. There is … book on … table. Give me … book, please. 5. I enjoy listening to … music but I don’t really like … music which that man performs on his … guitar. 6. What did you have for … lunch? — I only had … tuna sandwich. 7. He is … wonderful … teacher. He teaches … English. 8. His … son is planning to get … degree in … computer science.  ',
     rule:
-      ' Если после названия языка не стоит слово language. В противном случае употребляется определенный артикль.  ✓ Chinese is difficult. The Chinese language is difficult. ',
+      'Если после названия языка не стоит слово language, то артикль не употребляется.' +
+      ' В противном случае употребляется определенный артикль.',
+    ruleBody: '<b>Chinese</b> is difficult. The <b>Chinese language</b> is difficult.',
     keys:
       " 1. English  is а world  language.  2. I study English. I attend English classes in the evening. On the days when I have no classes, I stay at home and do some work about the house. I have dinner with my family. After dinner I talk to the members of my family, watch ТV and read books, newspapers and magazines. I go to bed late at night. 3. I am thirsty. Give me some water, please.4. There is а book on the tаblе. Give me the book, please.5. I enjoy listening to music but I don't really like the music which that man performs on his guitar. 6. What did you have for lunch? - I only had а tuna sandwich.7. Не is а wonderful teacher. Не teaches English. 8. His son is planning to get а degree in computer science.",
   },
@@ -324,8 +326,13 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. When my grandfather was … young man, he studied … physics. 2. Do you speak … Spanish? 3. My uncle is … great specialist in … English literature. 4. … Japanese is more difficult than … French. 5. We listened to … very interesting lecture on … English history yesterday. 6. Yesterday at … lesson of … geography … teacher told us … very interesting things about … famous travellers. 7. My father speaks … English and … French, but he does not speak … German. 8. We had … lesson of … mathematics yesterday. We wrote … paper in … mathematics. … teacher said, “I shall correct … papers in … evening. Tomorrow you will know … results”. 9. My brother is an expert in … geology. He enjoys … beauties of … nature of Siberia. 10. My friend is studying … law.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: to play ✓ chess, to play the piano, to play ✓ football, to play the guitar, out of ✓ doors ',
+    rule: ' Запомните следующие устойчивые словосочетания:  ',
+    ruleBody:
+      '<ul>\n' +
+      '      <li>to play chess, to play football</li>\n' +
+      '      <li>to play the piano, to play the guitar</li>\n' +
+      '      <li>out of doors</li>\n' +
+      '    </ul>',
     keys:
       ' 301. When my grandfather was а young man, he studied physics. 2. Do you speak Spanish?  3.  Му uncle is а great specialist on English literature. 4. Japanese is more difficult than French. 5. We listened to а very interesting lecture on English history yesterday. 6. Yesterday at the lesson of geography the teacher told us (some) very interesting things about famous travellers. 7. Му father speaks English and French, but he does not speak German. 8. We had а lesson of mathematics yesterday. We wrote а paper in mathematics. The teacher said, "1 shall correct the papers in the evening. Tomorrow you will know the results". 9. Му brother is an expert on geology. Не enjoys the beauties of nature in Siberia.10. Му friend is studying law.',
   },
