@@ -341,10 +341,18 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' 1. Do you play … piano? 2. There is … big black piano in our living room. It is at … wall to … left of … door opposite … sideboard. My mother likes to play … piano. She often plays … piano in … evening. 3. … boys like to play … football. 4. What do you do in … evening? — I often play … chess with my grandfather. 5. Where are … children? — Oh, they are out of … doors. … weather is fine today. They are playing … badminton in … yard. 6. What … games does your sister like to play? — She likes to play … tennis. 7. Do you like to play … guitar? 8. What … colour is your guitar? 9. My … name is Charlie. I come from … pretty big … family. I have two … brothers and … sister. My … sister plays … violin really well and wants to be … professional … musician. She has other … hobbies, too, and she often goes swimming with her … friends if … weather is nice. After … work I like to relax. I play … piano for relaxation. If there is … time, my … brothers and I play … golf оn … Sunday.  ',
-    rule:
-      ' Запомните, что перед обращением артикль опускается: Например: What are you doing, ✓ children? Запомните следующие устойчивые словосочетания: in a loud voice in a soft voice in a low voice in a thin voice in an angry voice in a trembling voice in a high voice in a weak voice in a kind voice in a … voice ',
+    rule: ' Запомните следующие правила:',
+    ruleBody:
+      '<div>Перед обращением артикль опускается:</div>' +
+      '<div> Например: What are you doing, ✓ children? </div>' +
+      '<div>Запомните следующие устойчивые словосочетания:</div> ' +
+      '<ul>\n' +
+      '    <li>in a loud voice, in a soft voice, in a low voice, in a thin voice</li>\n' +
+      '    <li>in an angry voice, in a trembling voice, in a high voice</li>\n' +
+      '    <li>in a weak voice, in a kind voice in, a … voice</li>\n' +
+      '  </ul>',
     keys:
-      ' 311. Do you play the piano? 2. There is а big black piano in our living room. lt is at the wall to the left of the door opposite the sideboard. Му mother likes to play the piano. She often plays the piano in the evening.3. Boys like to play football. 4. What do you do in the evening? - 1 often play chess with my grandfather.5. Where are the children? - Oh, they are out of doors. The weather is fine today. They are playing badminton in the yard. 6. What games does your sister like to play? - She likes to play tennis. 7. Do you like to play the guitar? 8. What colour is your guitar? 9. Му name is Charlie. 1 соте from а pretty big family. 1 have two brothers and а sister. Му sister plays the violin really well and wants to bе а professional musician. She has other hobbles, too, and she often goes swimming with her.friends if the weather is nice. After work I like to relax. 1 play the piano for relaxation. On Sunday my brothers and I play golf if there is time.',
+      '1. Do you play the piano? 2. There is а big black piano in our living room. lt is at the wall to the left of the door opposite the sideboard. Му mother likes to play the piano. She often plays the piano in the evening.3. Boys like to play football. 4. What do you do in the evening? - I often play chess with my grandfather.5. Where are the children? - Oh, they are out of doors. The weather is fine today. They are playing badminton in the yard. 6. What games does your sister like to play? - She likes to play tennis. 7. Do you like to play the guitar? 8. What colour is your guitar? 9. Му name is Charlie. I соте from а pretty big family. I have two brothers and а sister. Му sister plays the violin really well and wants to bе а professional musician. She has other hobbies, too, and she often goes swimming with her friends if the weather is nice. After work I like to relax. I play the piano for relaxation. On Sunday my brothers and I play golf if there is time.',
   },
   {
     exerciseNumber: 32,
@@ -844,7 +852,7 @@ const textbook = [
     todo:
       ' Дайте соответствующие существительные женского рода. A lion, a tiger, an actor, a poet, a man, an uncle, a husband, a brother, a grandfather, a son, a master, a baron, a count, a shepherd, a host. ',
     keys:
-      ' 89А lioness, а tigress, an actress, а poetess, а woman, an aunt,  а wife, а sister, а grandmother,  а daughter, а mistress, а  baroness,  а  countess,  а  shepherdess, а hostess.',
+      'А lioness, а tigress, an actress, а poetess, а woman, an aunt,  а wife, а sister, а grandmother,  а daughter, а mistress, а  baroness,  а  countess,  а  shepherdess, а hostess.',
   },
   {
     exerciseNumber: 90,

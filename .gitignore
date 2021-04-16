@@ -7,7 +7,7 @@
 .pnp.js
 
 \\\\# my files for work and testing
-/src/components/Test
+/src/components/*Test
 /src/components/RoutingTest
 /src/cash.md
 

@@ -10,7 +10,7 @@ function Rule({ rule, ruleBody }) {
 
   return (
     <div className={classes.rule}>
-      <p className={classes.title}>{rule}</p>
+      <h2 className={classes.title}>{rule}</h2>
       <Markdown>{ruleBody}</Markdown>
     </div>
   );
