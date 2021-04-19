@@ -23,17 +23,13 @@ export function* inputCheckClass(answers, keys, wrongClass) {
   let keyIndex = 0;
   while (true) {
     if (typeof keys[keyIndex] === 'string') {
-      yield answers[`key_${keyIndex}`] === keys[keyIndex] ||
-      answers[`key_${keyIndex}`] === '…' ||
-      answers[`key_${keyIndex}`] === undefined
+      yield answers[`key_${keyIndex}`] === keys[keyIndex] || answers[`key_${keyIndex}`] === undefined
         ? null
         : wrongClass;
       keyIndex += 1;
     }
     if (Array.isArray(keys[keyIndex])) {
-      yield keys[keyIndex].includes(answers[`key_${keyIndex}`]) ||
-      answers[`key_${keyIndex}`] === '…' ||
-      answers[`key_${keyIndex}`] === undefined
+      yield keys[keyIndex].includes(answers[`key_${keyIndex}`]) || answers[`key_${keyIndex}`] === undefined
         ? null
         : wrongClass;
       keyIndex += 1;

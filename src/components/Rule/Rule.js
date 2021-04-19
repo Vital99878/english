@@ -11,7 +11,7 @@ function Rule({ rule, ruleBody }) {
   return (
     <div className={classes.rule}>
       <h2 className={classes.title}>{rule}</h2>
-      <Markdown>{ruleBody}</Markdown>
+      <Markdown options={{ className: 'ruleBody' }}>{ruleBody}</Markdown>
     </div>
   );
 }
