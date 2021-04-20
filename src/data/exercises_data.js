@@ -519,10 +519,17 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' Once there lived … man who was very fond of … gold. He used to say, “While I have my gold, I am … happiest man in … world.” And so all his life he saved … money. One day he was travelling in … desert of … North Africa. He lost his way. He had no … food or … water. He was almost dying of … hunger. He was so weak that he could not walk, he could only crawl. … heat was terrible. There were only … stones and … sand around. Just then he saw … bag lying on … sand. He hoped that he would find … food in it and … water, too. He crawled up to … bag and opened it. He saw that … bag was full of … gold. What is … use of … gold to … hungry man in … desert? He left … bag on … hot sand, crying bitterly, “I am … most unhappy man in … world.”  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: to the cinema at the cinema to the theatre at the theatre to the shop at the shop to the market at the market to go for a walk ',
+    rule: 'Запомните следующие устойчивые словосочетания: ',
+    ruleBody:
+      '<ul>\n' +
+      '    <li style="margin-bottom: 6px">to the cinema, at the cinema</li>\n' +
+      '    <li style="margin-bottom: 6px">to the theatre, at the theatre</li>\n' +
+      '    <li style="margin-bottom: 6px"> to the shop, at the shop</li>\n' +
+      '    <li style="margin-bottom: 6px">to the market, at the market </li>\n' +
+      '    <li>to go for a walk</li>\n' +
+      '  </ul>  ',
     keys:
-      ' 46Once there lived а man who was very fond of gold. Не used to say, "While I have my gold, 1 am the happiest man in the world." And so all his life he saved money. One day he was travelling in the desert of North Af rica. Не lost his way. Не had no food or water. Не was almost dying of hunger. Не was so weak that he could not walk, he could only crawl. The heat was terrible. There were only stones and sand around. Just then he saw а bag lying on the sand. Не hoped that he would find food in it  and water,  too. Не crawled  up to the bag and opened it.  Не saw  that the bag was full of gold. What is  the  use of  gold  to а  hungry  man in а desert? Не left the bag on the hot sand, crying bitterly, "1 am the most unhappy man in the world."',
+      ' Once there lived а man who was very fond of gold. Не used to say, "While I have my gold, 1 am the happiest man in the world." And so all his life he saved money. One day he was travelling in the desert of North Af rica. Не lost his way. Не had no food or water. Не was almost dying of hunger. Не was so weak that he could not walk, he could only crawl. The heat was terrible. There were only stones and sand around. Just then he saw а bag lying on the sand. Не hoped that he would find food in it  and water,  too. Не crawled  up to the bag and opened it.  Не saw  that the bag was full of gold. What is  the  use of  gold  to а  hungry  man in а desert? Не left the bag on the hot sand, crying bitterly, "1 am the most unhappy man in the world."',
   },
   {
     exerciseNumber: 47,
@@ -537,10 +544,17 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' Three men came to … New York for … holiday. They came to … very large hotel and took … room there. Their room was on … forty-fifth floor. In … evening … friends went to … theatre and came back to … hotel very late. “I am very sorry,” said … clerk of … hotel, “but … lifts do not work tonight. If you don’t want to walk up to your room, we shall make … beds for you in … hall.” “No, no,” said one of … friends, “no, thank you. We don’t want to sleep in … hall. We shall walk up to our room.” Then he turned to his friends and said, “It is not easy to walk up to … forty-fifth floor, but we shall make it easier. On … way to … room I shall tell you some jokes; then you, Andy, will sing us some songs; then you, Peter, will tell us some interesting stories.” So they began walking up to their room. Tom told them many jokes; Andy sang some songs. At last they came to … thirty-sixth floor. They were tired and decided to have … rest. “Well,” said Tom, “now it is your turn, Peter. After all … jokes, I would like to hear … sad story. Tell us … long and interesting story with … sad end.” “… story which I am going to tell you,” said Peter, “is sad enough. We left … key to our room in … hall.”  ',
-    rule:
-      ' Запомните следующие конструкции: The famous English writer Dickens lived in the 19th century. Dickens, a famous English writer, lived in the 19th century. Запомните следующие устойчивые словосочетания: on ✓ horseback on ✓ board a ship ',
+    rule: 'Запомните следующее',
+    ruleBody:
+      '<ul>\n' +
+      '    <li style="margin-bottom: 6px">Запомните следующие конструкции:</li>\n' +
+      '    <li style="margin-bottom: 6px">The famous English writer Dickens lived in the 19th century.</li>\n' +
+      '    <li style="margin-bottom: 6px">Dickens, a famous English writer, lived in the 19th century.</li>\n' +
+      '    <li style="margin-bottom: 6px">Запомните следующие устойчивые словосочетания:</li>\n' +
+      '    <li>on ✓ horseback, on ✓ board a ship</li>\n' +
+      '  </ul>    ',
     keys:
-      ' 48Three men came to New York for а holiday. They came to а very large hotel and took а  room  there. Their room was on the forty-fifth floor. ln the evening the friends went to the theatre and came back to the hotel very late. "1 am very sorry," said the clerk of the hotel, "but the lifts do not work tonight. lf you don\'t want to walk up to your room, we shall make beds for you in the hall." "No, no," said one of the friends, "no, thank you. We don\'t want to sleep in the hall. We shall walk up to our room." Then he turned to his friends and said, "It is not easy to walk up to the  forty-fifth floor, but  we shall make it easier. On the way to the room I shall tell you some jokes; then you, Andy, will sing us some songs; then you, Peter, will tel1 us some interesting stories." So they began walking up to their room. Tom told them many jokes; Andy sang some songs. At last they came to the thirty-sixth floor. They  were  tired and decided to  have а  rest. "Well," said Tom, "now it is your turn, Peter. After all the jokes, 1 would lik·e to hear а sad story. Tel1 us а long and interesting story with а sad end." "The story which I am going to tel1 you," said Peter, "is sad enough. We  left  the  key to our room in the hall."',
+      'Three men came to New York for а holiday. They came to а very large hotel and took а  room  there. Their room was on the forty-fifth floor. ln the evening the friends went to the theatre and came back to the hotel very late. "I am very sorry," said the clerk of the hotel, "but the lifts do not work tonight. lf you don\'t want to walk up to your room, we shall make beds for you in the hall." "No, no," said one of the friends, "no, thank you. We don\'t want to sleep in the hall. We shall walk up to our room." Then he turned to his friends and said, "It is not easy to walk up to the  forty-fifth floor, but  we shall make it easier. On the way to the room I shall tell you some jokes; then you, Andy, will sing us some songs; then you, Peter, will tell us some interesting stories." So they began walking up to their room. Tom told them many jokes; Andy sang some songs. At last they came to the thirty-sixth floor. They  were  tired and decided to  have а  rest. "Well," said Tom, "now it is your turn, Peter. After all the jokes, I would lik·e to hear а sad story. Tell us а long and interesting story with а sad end." "The story which I am going to tell you," said Peter, "is sad enough. We  left  the  key to our room in the hall."',
   },
   {
     exerciseNumber: 49,

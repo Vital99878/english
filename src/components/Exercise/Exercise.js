@@ -64,6 +64,10 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
   }
 
   const inputName = createIndex();
+  function calcWidth(evt) {
+    console.log(evt);
+    // return `${evt.target.value.length * 14}px`;
+  }
 
   const dataForBody = exerciseData.split('…');
   const exerciseBody = dataForBody.map((item, index) => {
@@ -85,6 +89,7 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
           onChange={(evt) => {
             evt.target.style.width = `${evt.target.value.length * 14}px`;
           }}
+          style={{ width: calcWidth() }}
           defaultValue="…"
         />
       </span>
