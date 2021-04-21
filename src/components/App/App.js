@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import classes from './App.module.scss';
 import Exercise from '../Exercise';
-import Test from '../Test';
 import Keys from '../Keys';
 import Navigation from '../Navigation';
 import { pureKeys } from '../../data/pureKeys';

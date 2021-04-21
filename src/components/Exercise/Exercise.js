@@ -9,11 +9,12 @@ import { createIndex, debounce, inputCheckClass } from '../../utilites';
 import classes from './Exercise.module.scss';
 
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pureKeys }) => {
-  goToExercise = debounce(goToExercise, 500);
   const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
   const [answers, setAnswers] = useState({});
   const { register, handleSubmit } = useForm();
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  goToExercise = debounce(goToExercise, 500);
 
   function checkExercises(data) {
     setAnswers(data);
@@ -64,10 +65,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
   }
 
   const inputName = createIndex();
-  function calcWidth(evt) {
-    console.log(evt);
-    // return `${evt.target.value.length * 14}px`;
-  }
 
   const dataForBody = exerciseData.split('…');
   const exerciseBody = dataForBody.map((item, index) => {
@@ -89,7 +86,6 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
           onChange={(evt) => {
             evt.target.style.width = `${evt.target.value.length * 14}px`;
           }}
-          style={{ width: calcWidth() }}
           defaultValue="…"
         />
       </span>

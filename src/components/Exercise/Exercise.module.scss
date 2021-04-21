@@ -37,6 +37,7 @@
     .input {
       @include exerciseInput;
       background-color: transparent;
+      transition: all 0.4s ease-out;
     }
     .inputWrong {
       background-color: rgba(255, 46, 46, 0.2);
