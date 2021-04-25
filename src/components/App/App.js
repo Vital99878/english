@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import classes from './App.module.scss';

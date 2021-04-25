@@ -8,6 +8,9 @@ import Modal from '../Modal';
 import { createIndex, debounce, inputCheckClass } from '../../utilites';
 import classes from './Exercise.module.scss';
 
+/**
+ * @description Компонент который отображает упражнения
+ */
 const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pureKeys }) => {
   const { exerciseNumber, todo, exerciseBody: exerciseData, rule, ruleBody } = exercise;
   const [answers, setAnswers] = useState({});
@@ -16,6 +19,11 @@ const Exercise = ({ exercise, nextExercise, previousExercise, goToExercise, pure
 
   goToExercise = debounce(goToExercise, 500);
 
+  /**
+   * @description сверяет ответы пользователя с ключами
+   *  и меняет класс в неправильных ответах
+   *  @param data данные из inputs
+   */
   function checkExercises(data) {
     setAnswers(data);
     if (!pureKeys) {

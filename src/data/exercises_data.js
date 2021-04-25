@@ -656,9 +656,20 @@ const textbook = [
     exerciseNumber: 57,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
-      ' It was … nice summer day. … weather was fine, … sun was shining in … blue sky, … air was fragrant with … smell of … grass and … flowers. … dog which was running about … streets of … little town saw … butcher’s … stall with … lot of … meat. … dog cautiously approached … stall and, when … butcher turned away to talk to … woman, quickly seized … big piece of … meat and ran away with it. On … way home … dog had to cross … stream by … narrow bridge. As he was crossing it, he looked down into … stream and saw his reflection in … water. He thought it was … other dog with … other piece of … meat. He snapped at … reflection and dropped his own piece of … meat. That’s how … dog was punished for … greediness.  ',
-    rule:
-      ' Запомните следующие устойчивые словосочетания: at ✓ sunrise at ✓ sunset in the country in ✓ town to the country to ✓ town by ✓ bus by ✓ tram by ✓ train by ✓ car ',
+      ' It was … nice summer day. … weather was fine, … sun was shining in … blue sky, … air was fragrant with … smell of … grass and … flowers. … dog which was running about … streets of … little town saw … butcher’s … stall with … lot of … meat. … dog cautiously approached … stall and, when … butcher turned away to talk to … woman, quickly seized … big piece of … meat and ran away with it. On … way home … dog had to cross … stream by … narrow bridge. As he was crossing it, he looked down into … stream and saw his reflection in … water. He thought it was … another dog with … another piece of … meat. He snapped at … reflection and dropped his own piece of … meat. That’s how … dog was punished for … greediness.  ',
+    rule: ' Запомните следующие устойчивые словосочетания:        ',
+    ruleBody:
+      '<ul>\n' +
+      '    <li>at ✓ sunrise</li>\n' +
+      '    <li>at ✓ sunset</li>\n' +
+      '    <li>to ✓ town </li>\n' +
+      '    <li>by ✓ bus</li>\n' +
+      '    <li> by ✓ tram</li>\n' +
+      '    <li> by ✓ train</li>\n' +
+      '    <li>by ✓ car</li>\n' +
+      '    <li>in the country</li>\n' +
+      ' <li>to the country</li>\n' +
+      '  </ul>',
     keys:
       " It was а nice summer day. The weather was fine, the sun was shining in the blue sky, the air was fragrant with the smell of grass and flowers. А dog which was running about the streets of а little town saw а butcher s stall with а lot of meat. The dog cautiously approached the stall and, when the butcher turned away to talk to а woman, quickly seized а big piece of meat and ran away with it. On the way home the dog had to cross a stream bу а narrow bridge. As he was crossing, he looked down into the stream and saw his reflection in the water. Не thought it was another dog with another_piece of meat. Не snapped at the reflection and dropped his own piece of meat. That's how the dog was punished for greediness.",
   },
@@ -667,7 +678,15 @@ const textbook = [
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' On … Sunday our family went to … country. We got up at … sunrise and quickly had … breakfast. After … breakfast we left … home. There is … little village not far from … St Petersburg where we have … friends. We went there by … train. We all had … great time in … country. … weather was nice, … sky was blue and … sun was shining. We stayed out of … doors all … day long. We played … volleyball and … tennis. At … sunset we stopped playing. There was … beautiful red-and-gold sunset that … evening. We sat watching … sunset. So we returned to … town late in … evening. When we came … home, we had … supper and went to … bed at once.  ',
-    rule: ' Запомните следующие устойчивые словосочетания: in ✓✓ spring in ✓✓ autumn in ✓✓ summer in ✓✓ winter ',
+    rule: ' Запомните следующие устойчивые словосочетания: ',
+    ruleBody:
+      '' +
+      '<ul>\n' +
+      '    <li>in ✓ spring</li>\n' +
+      '    <li> in ✓ autumn</li>\n' +
+      '    <li> in ✓ summer</li>\n' +
+      '    <li>in ✓ winter </li>\n' +
+      '  </ul>',
     keys:
       '1. On Sunday our family went to the country. We got up at sunrise and quickly had break fast. After  breakfast we left home. There is а little village not far from St Petersburg where we have friends. We went there bу train. We all had а great time in the country. The weather was nice, the sky was blue and the sun was shining. We stayed out of doors all day long: We played volleyball and tennis. At sunset  we stopped  playing.  There was а beautiful red and golden  sunset  that  evening.  We sat watching the  sunset. So we returned  to town  late in the evening. When we came home, we had supper and went to bed at once.',
   },
