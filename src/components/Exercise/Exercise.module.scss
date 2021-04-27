@@ -56,12 +56,13 @@
     }
   }
   .checkButton {
-    padding: 4px;
+    padding: 8px;
     margin-right: 16px;
     margin-left: auto;
   }
-  .checkButton:hover {
-    padding: 4px;
+  .checkButton:hover,
+  .checkButton:focus {
+    padding: 8px;
     background-color: lightgreen;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
