@@ -801,18 +801,28 @@ const textbook = [
     exerciseNumber: 70,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
-      ' One … day … father of … rich … family took his … son on … trip to … country with … firm … purpose of showing him how poor … people can be. They spent … day and … night at … farm of … very poor family. When they returned from their … trip, … father asked his … son, “How was … trip?” “Very good, Dad!” “Did you see how poor … people can be?” … father asked. “Yeah!” “And what did you learn?” … son replied: “I saw that we have … dog at … home, and they have four. We have … pool that reaches to … middle of … garden; they have … river that has no … end. We have … imported lamps in … garden; they have … stars. Our … patio reaches to … front yard; they have … whole horizon.” When … little boy finished speaking, his … father was speechless. His … son added, “Thanks, Dad, for showing me how poor we are.” ',
+      ' One … day … father  and his rich … family took his … son on … trip to … country with … firm … purpose of showing him how poor … people can be. They spent … day and … night at … farm of … very poor family. When they returned from their … trip, … father asked his … son, “How was … trip?” “Very good, Dad!” “Did you see how poor … people can be?” … father asked. “Yeah!” “And what did you learn?” … son replied: “I saw that we have … dog at … home, and they have four. We have … pool that reaches to … middle of … garden; they have … river that has no … end. We have … imported lamps in … garden; they have … stars. Our … patio reaches to … front yard; they have … whole horizon.” When … little boy finished speaking, his … father was speechless. His … son added, “Thanks, Dad, for showing me how poor we are.” ',
     keys:
-      ' 70One day а father and his rich family took his son on а trip to the country with the firm purpose of showing him how poor people can bе. They spent а day and a night at the farm of а very poor family. When they returned from their trip, the father asked his  son,  "How  was the trip?" "Very good, Dad!" "Did you see how poor people can bе?" the father asked. "Yeah!" "And what did you  learn?" The son replied: "1 saw that  we have  а dog at home, and they have four. We have а pool that reaches to the middle of the garden; they have а river that has no end. We have imported lamps in the garden; they have the stars. Our patio reaches to the front yard; they have а whole horizon." When а little bоу finished speaking, his father was speechless. His son added, "Thanks, Dad, for showing me how poor we are."',
+      ' One day а father and his rich family took his son on а trip to the country with the firm purpose of showing him how poor people can bе. They spent а day and a night at the farm of а very poor family. When they returned from their trip, the father asked his  son,  "How  was the trip?" "Very good, Dad!" "Did you see how poor people can bе?" the father asked. "Yeah!" "And what did you  learn?" The son replied: "1 saw that  we have  а dog at home, and they have four. We have а pool that reaches to the middle of the garden; they have а river that has no end. We have imported lamps in the garden; they have the stars. Our patio reaches to the front yard; they have а whole horizon." When а little bоу finished speaking, his father was speechless. His son added, "Thanks, Dad, for showing me how poor we are."',
   },
   {
     exerciseNumber: 71,
     todo: ' Вставьте артикль, где необходимо.',
     exerciseBody:
       ' … room in which … boys were fed was … large stone hall, with … copper at one end, out of which … cook took … gruel which he put into each bowl at … mealtimes. Each boy had one portion of … gruel, and no more, and on … Sundays they had two ounces and … quarter of … bread besides. … bowls never needed washing — … boys polished them with their spoons till they shone again. At last … boys got so wild with … hunger that one boy said he was afraid he would some night eat … boy who slept next to him. … boys believed him. … council was held. Oliver was chosen to go up to … cook that evening after … supper and ask for more. … evening arrived, and … boys took their places. … cook stood at … copper. … gruel was served out and disappeared. Then Oliver rose from … table and advancing to … cook, said in … weak voice, “Please, sir, I want some more.” … cook was … healthy man, but he turned pale. “What?” said he in … trembling voice. … man could not believe his ears.  ',
-    rule: ' Запомните следующие устойчивые словосочетания: to go on ✓✓ strike to be on ✓✓ strike ',
+    rule: ' Запомните следующие устойчивые словосочетания:   ',
+    ruleBody:
+      '' +
+      '<ul>\n' +
+      '    ' +
+      '<li>to go on ✓ strike</li>' +
+      '\n' +
+      '    <li>to be on ✓ strike</li>' +
+      '\n' +
+      '  ' +
+      '</ul>',
     keys:
-      ' 71The room in which the boys were fed was а large stone hall, with а copper at one end, out of which the cook took gruel which he put into each bowl at mealtimes. Each bоу had one portion of gruel and no more, and on Sundays they had two ounces and а quarter of bread besides. The bowls never needed washing - the boys polished them with their spoons till they shone again. At last the boys got so wild with hunger that one bоу said he was afraid he would some night eat the bоу who slept next to him. The boys believed him. А council was held. Oliver was chosen to go up to the cook that evening after supper and ask for more. The evening arrived, and the boys took their places. The cook stood at the copper. The gruel was served out and disappeared. Then Oliver rose from the tаblе and advancing to the cook, said in а weak voice, "Please, sir, 1 want some more." The cook was а healthy man, but he turned pale. "What?" said he in а trembling voice. The man could not believe his ears. ',
+      'The room in which the boys were fed was а large stone hall, with а copper at one end, out of which the cook took gruel which he put into each bowl at mealtimes. Each bоу had one portion of gruel and no more, and on Sundays they had two ounces and а quarter of bread besides. The bowls never needed washing - the boys polished them with their spoons till they shone again. At last the boys got so wild with hunger that one bоу said he was afraid he would some night eat the bоу who slept next to him. The boys believed him. А council was held. Oliver was chosen to go up to the cook that evening after supper and ask for more. The evening arrived, and the boys took their places. The cook stood at the copper. The gruel was served out and disappeared. Then Oliver rose from the tаblе and advancing to the cook, said in а weak voice, "Please, sir, 1 want some more." The cook was а healthy man, but he turned pale. "What?" said he in а trembling voice. The man could not believe his ears. ',
   },
   {
     exerciseNumber: 72,
@@ -951,9 +961,8 @@ const textbook = [
     exerciseBody:
       ' The Grand Canyon is … geological and scenic won- der that is known throughout … world. Located in … United States in … Northern Arizona, it is 446 kilo- metres long, up to 29 kilometres wide and has … depth of up to ',
     rule:
-      " 1.8 kilometres. The Grand Canyon is … world-famous geological site. … canyon's walls contain rock layers that expose nearly two billion years of … Earth's history. Geologic studies began in … 19th century and continue today. One of … biggest questions is how … Colorado River chose its course and began carving … canyon. … area contains several major ecosystems and is home to over 1500 plant and over 400 animal species. For thousands of years, … area has been inhabited by … Native Americans. In the early 1800s, … United States government started to send expeditions to explore and map … canyon. … area received federal protection in 1893 as … forest reserve. Later, in 1919, it received national park status. Today … Grand Canyon National Park receives almost five million visitors each year.  СУЩЕСТВИТЕЛЬНОЕ ",
-    keys:
-      ' 88The 2014 Winter Olympics, officially  known  as the XXII Olympic Winter Games or the 22nd Winter Olympics, will bе held in the Russian Federation for the first time; the Soviet Union hosted the 1980 Summer Games in Moscow. The host city Sochi has а population of 400,000 people and is situated in Krasnodar, which is the third largest region in Russia.The Games will bе organized in two clusters: а coastal cluster for ice events in Sochi, and а mountain cluster located in the Krasnaya Polyana Mountains. This will make it one of the most compact Games ever, with around 30 minutes travel time from the coastal to mountain cluster. The Sochi Olympic Park will bе built  along the Black Sea coast in the Imeretinskaya Valley, where all the ice venues such as the Bolshoi Ice Palace, the Maly Ice Palace, the Olympic Oval, the Sochi Olympic Skating Centre, the Olympic Curling Centre, the Central Stadium, the Main Olympic Village and the International Broadcast Centre and Main Press Centre, will bе built anew for the 2014 Games. There will bе an  average distance of 6 km between the Olympic Village and the other coastal venues. The mountain cluster in Krasnaya Polyana will bе home to all the skiing and sliding sports. There will bе an average distance of 4 km between the mountain sub-village and the venues. There will also bе а submedia centre in the mountain cluster. СУЩЕСТВИТЕЛbНОЕ',
+      " 1.8 kilometres. The Grand Canyon is … world-famous geological site. … canyon's walls contain rock layers that expose nearly two billion years of … Earth's history. Geologic studies began in … 19th century and continue today. One of … biggest questions is how … Colorado River chose its course and began carving … canyon. … area contains several major ecosystems and is home to over 1500 plant and over 400 animal species. For thousands of years, … area has been inhabited by … Native Americans. In the early 1800s, … United States government started to send expeditions to explore and map … canyon. … area received federal protection in 1893 as … forest reserve. Later, in 1919, it received national park status. Today … Grand Canyon National Park receives almost five million visitors each year.",
+    keys: 'no keys',
   },
   {
     exerciseNumber: 89,
@@ -967,7 +976,7 @@ const textbook = [
     todo:
       ' Дайте соответствующие существительные мужского рода. A lady, a girl, a niece, Mrs Smith, a widow, a mother, a Frenchwoman, a hen, a cow, a queen,  a princess, a duchess, a stewardess. Образование множественного числа существительных a cat — cats a dress — dresses a dog — dogs a box — boxes а саг — cars a dish — dishes a chair — chairs a watch — watches a boy — boys a city — cities Но: 1) a piano — pianos; 2) a roof — roofs; a chief — chiefs; a potato — potatoes a leaf — leaves a photo — photos. a safe — safes; a cliff — cliffs.  ',
     keys:
-      ' 90А lord, а bоу, а nephew, Mr Smith, а widower, а father, а Frenchman, а cock, an ох, а king, а prince, а duke, а steward.',
+      ' А lord, а bоу, а nephew, Mr Smith, а widower, а father, а Frenchman, а cock, an ох, а king, а prince, а duke, а steward.',
   },
   {
     exerciseNumber: 91,
@@ -976,7 +985,7 @@ const textbook = [
     exerciseBody:
       ' Запомните форму множественного числа следующих существительных: a man — men a goose — geese a woman — women a tooth — teeth a child — children a foot — feet a mouse — mice an ox — oxen Запомните также: an Englishman — Englishmen a Frenchman — Frenchmen Но: a German — Germans Запомните три существительных, имеющих во множественном числе ту же форму, что и в единственном: a sheep — sheep a deer — deer a swine — swine ',
     keys:
-      ' 91Pens, classes, stories, roads, days, cats, bushes, desks, tables, plates, foxes, rooms, ladies, knives, chairs, buses, heroes, matches, ways, houses, families, flags, towns, wolves, countries, lions, parks, plays, dictionaries, thieves, keys.',
+      ' Pens, classes, stories, roads, days, cats, bushes, desks, tables, plates, foxes, rooms, ladies, knives, chairs, buses, heroes, matches, ways, houses, families, flags, towns, wolves, countries, lions, parks, plays, dictionaries, thieves, keys.',
   },
   {
     exerciseNumber: 92,
